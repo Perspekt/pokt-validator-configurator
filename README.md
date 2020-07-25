@@ -1,5 +1,5 @@
 # pokt-validator-configurator
-Scripts to setup Pocket Network validator node updated for RC-0.4.3
+Scripts to setup Pocket Network validator node updated for RC-0.4.3  
 (Assumes fresh Ubuntu Install logged in as root without new user)
 
 # Instructions
@@ -18,7 +18,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 4. Reboot and log back in with new user (ex. ssh newuser@1.2.3.4)
 
 ## Part 3 - Create SSL Cert
-1. Run the following command and replace YourDomainName with your domain:
+1. Run the following command and replace YourDomainName with your domain:  
 sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
 2. Enter email, Agree, Y, Y
 3. Create the TXT record where your domain's nameservers are hosted
