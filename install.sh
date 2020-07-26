@@ -25,7 +25,7 @@ else
 fi
 
 
-go build -tags cleveldb -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
+sudo go build -tags cleveldb -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 sleep 2
 pocket start #creates config.json
 sleep 2

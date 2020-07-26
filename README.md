@@ -13,7 +13,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 
 ## Part 2 - Run Dependancy Installer and Reboot
 1. cd pokt-validator-configurator
-2. ./dependancyinstaller.sh
+2. ./dependencyinstaller.sh
 3. Press Y to proceed through g-install script
 4. Reboot and log back in with new user (ex. ssh newuser@1.2.3.4)
 
@@ -24,7 +24,8 @@ sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns
 3. Create the TXT record where your domain's nameservers are hosted
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
-1. cd ~/pokt-validator-configurator
-2. ./install.sh
-3. Enter the domain name for your node used for Let's Encrypt SSL
+1. git pull https://github.com/Perspekt/pokt-validator-setup.git
+2. cd ~/pokt-validator-configurator
+3. ./install.sh
+4. Enter the domain name for your node used for Let's Encrypt SSL
 
