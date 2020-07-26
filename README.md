@@ -21,11 +21,18 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 1. Run the following command and replace YourDomainName with your domain:  
 sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
 2. Enter email, Agree, Y, Y
-3. Create the TXT record where your domain's nameservers are hosted (Wait a few minutes for propagation before hitting enter)
+3. Create the TXT record where your domain's nameservers are hosted
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
 1. git pull https://github.com/Perspekt/pokt-validator-setup.git
 2. cp ~/pokt-validator-configurator/install.sh ~
 3. ~/install.sh
 4. Enter the domain name for your node used for Let's Encrypt SSL
+
+## Part 5 - Create Pocket Account and Start Node
+1. pocket accounts create
+2. pocket accounts set-validator <address>
+3. pocket start
+4. Open new session
+5. watch -n .5 pocket query height
 
