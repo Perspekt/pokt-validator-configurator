@@ -25,7 +25,7 @@ sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
 1. git pull https://github.com/Perspekt/pokt-validator-setup.git
-2. cd ~/pokt-validator-configurator
-3. ./install.sh
+2. cp ~/pokt-validator-configurator/install.sh ~
+3. ~/install.sh
 4. Enter the domain name for your node used for Let's Encrypt SSL
 
