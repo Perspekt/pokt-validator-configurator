@@ -31,6 +31,10 @@ sleep 2
 pocket start #creates config.json
 # Add kill process
 sleep 2
+cd ~/.pocket/config/
+curl -O https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json
+# Add  Create Chains
+cd ~
 
 CONFIG=~/.pocket/config/config.json
 if [ -f "$CONFIG" ]; then
