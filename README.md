@@ -19,7 +19,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 4. ./makeuser.sh
 
         (( Enter name of new Unix user: )) - - enter new username
-
+        
         (( New password: )) -- enter password
 
         (( Retype new password: )) -- reenter password
@@ -59,10 +59,30 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 4. Continue to Part 3 (you are dropped into a new shell)
 
 ## Part 3 - Create SSL Cert
-1. Run the following command and replace YourDomainName with your domain:  
-sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
-2. Enter email, Agree, Y, Y
+   [[ Run the following command and replace YourDomainName with your domain:]]  
+1. sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
+
+        (( [sudo] password for nodeuser: )) - - enter password
+        (( Enter email .... (Enter 'c' to cancel): - - enter email
+        (( (A)gree/(C)ancel: )) - - A
+        (( (Y)es/(N)o: )) - - Y
+        (( Are you OK with .... (Y)es/(N)o: )) - - Y
+        ((Please deploy a DNS TXT record under the name
+              _acme-challenge.node2.2jx.com with the following value:
+
+              n_feack6y2hTfg9ce3dWhpJEqjC6z2kbU7lOQDYINXY
+
+               Before continuing, verify the record is deployed.
+              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+               Press Enter to Continue  ))
+    ## STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
+     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
+      
 3. Create the TXT record where your domain's nameservers are hosted (wait a few minuites for propagation)
+      https://mxtoolbox.com/TXTLookup.aspx
+      
+      https://www.whatsmydns.net/
+
 4. Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
