@@ -100,7 +100,9 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         [[ takes about 1 minute, pauses several times, ends with NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5 ]]
 
 
-## Part 5 - Create Pocket Account, Start Node, Stake
+## Part 5 - Create Pocket Account
+5.1) pocket accounts create
+
 5.1) Continue here: https://docs.pokt.network/docs/create-validator-node
 
 ### Helpful Commands
