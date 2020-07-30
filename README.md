@@ -1,5 +1,5 @@
 # pokt-validator-configurator
-Scripts to setup Pocket Network validator node updated for RC-0.4.3  
+Scripts to setup Pocket Network validator node updated for RC-0.5.0  
 (Assumes fresh Ubuntu Install logged in as root without new user)
 
 # Instructions
@@ -86,9 +86,15 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 4. Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
-1. cp ~/pokt-validator-configurator/install.sh ~
+1. cp ~/pokt-validator-configurator/install.sh 
+
+        (( no output ))
 2. ~/install.sh
-3. Enter the domain name for your node used for Let's Encrypt SSL
+
+        ((Enter domain name for node )) - - enter the domain name that you used above in step 3
+        (( [sudo] password for nodeuser: )) - - enter password
+        [[ takes about 1 minute, pauses several times, ends with NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5 ]]
+
 
 ## Part 5 - Create Pocket Account, Start Node, Stake
 1. Continue here: https://docs.pokt.network/docs/create-validator-node
