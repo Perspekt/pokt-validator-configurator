@@ -6,45 +6,57 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 ## Part 1 - Create Unix User
 1. git clone https://github.com/Perspekt/pokt-validator-configurator.git
 
-(( Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done. ))
+        (( Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done. ))
 
 2. cd pokt-validator-configurator
 
-(( comand prompt now ends with :~/pokt-validator-configurator#  ))
+        (( comand prompt now ends with :~/pokt-validator-configurator#  ))
 
 3. chmod 755 ./*.sh
 
-(( no output generated ))
+        (( no output generated ))
 
 4. ./makeuser.sh
 
-(( Enter name of new Unix user: )) - - enter new username
+        (( Enter name of new Unix user: )) - - enter new username
 
-(( New password: )) -- enter password
+        (( New password: )) -- enter password
 
-(( Retype new password: )) -- reenter password
+        (( Retype new password: )) -- reenter password
 
-(( Full Name []: )) -- hit enter to leave blank
+        (( Full Name []: )) -- hit enter to leave blank
 
-(( Room Number []: )) -- hit enter to leave blank
+        (( Room Number []: )) -- hit enter to leave blank
 
-(( Work Phone []: )) -- hit enter to leave blank
+        (( Work Phone []: )) -- hit enter to leave blank
 
-(( Home Phone []:)) -- hit enter to leave blank
+        (( Home Phone []:)) -- hit enter to leave blank
 
-(( Other []: )) -- hit enter to leave blank
+        (( Other []: )) -- hit enter to leave blank
 
-(( Is the information correct? [Y/n]))  - - Y
+        (( Is the information correct? [Y/n]))  - - Y
 
-(( command prompt now starts with the username that you just created ))
+        (( command prompt now starts with the username that you just created ))
 
 
 ## Part 2 - Run Dependancy Installer and Reboot
 1. git clone https://github.com/Perspekt/pokt-validator-configurator.git
+
+        (( Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.))
+        
 2. cd pokt-validator-configurator
+
+        (( command prompt ends with :~/pokt-validator-configurator$ ))
+        
 3. ./dependencyinstaller.sh
-4. Press Y to proceed through g-install script
-5. Continue to Part 3 (you are dropped into a new shell)
+
+        (( [sudo] password for nodeuser: )) - - enter password
+        ((  takes aproximately 2 minutes to complete,  pauses several times durring process, several "error" and warning lines but it's OK))
+        (( Do you want to continue? [y/N] )) - - Y
+        (( Do you want to install the latest go version? [y/N] )) - - Y
+        (( STARTING NEW SHELL TO LOAD G-INSTALL... ))
+
+4. Continue to Part 3 (you are dropped into a new shell)
 
 ## Part 3 - Create SSL Cert
 1. Run the following command and replace YourDomainName with your domain:  
