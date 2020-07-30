@@ -4,19 +4,19 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 
 # Instructions
 ## Part 1 - Create Unix User
-1. git clone https://github.com/Perspekt/pokt-validator-configurator.git
+1.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
 
         (( Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done. ))
 
-2. cd pokt-validator-configurator
+1.2) cd pokt-validator-configurator
 
         (( comand prompt now ends with :~/pokt-validator-configurator#  ))
 
-3. chmod 755 ./*.sh
+1.3 chmod 755 ./*.sh
 
         (( no output generated ))
 
-4. ./makeuser.sh
+1.4 ./makeuser.sh
 
         (( Enter name of new Unix user: )) - - enter new username
         
@@ -40,15 +40,15 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 
 
 ## Part 2 - Run Dependancy Installer and Reboot
-1. git clone https://github.com/Perspekt/pokt-validator-configurator.git
+2.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
 
         (( Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.))
         
-2. cd pokt-validator-configurator
+2.2) cd pokt-validator-configurator
 
         (( command prompt ends with :~/pokt-validator-configurator$ ))
         
-3. ./dependencyinstaller.sh
+2.3) ./dependencyinstaller.sh
 
         (( [sudo] password for nodeuser: )) - - enter password
         ((  takes aproximately 2 minutes to complete,  pauses several times durring process, several "error" and warning lines but it's OK))
@@ -56,11 +56,11 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         (( Do you want to install the latest go version? [y/N] )) - - Y
         (( STARTING NEW SHELL TO LOAD G-INSTALL... ))
 
-4. Continue to Part 3 (you are dropped into a new shell)
+2.4) Continue to Part 3 (you are dropped into a new shell)
 
 ## Part 3 - Create SSL Cert
    [[ Run the following command and replace YourDomainName with your domain:]]  
-1. sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
+3.1) sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
 
         (( [sudo] password for nodeuser: )) - - enter password
         (( Enter email .... (Enter 'c' to cancel): - - enter email
@@ -75,21 +75,25 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
                Before continuing, verify the record is deployed.
               - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                Press Enter to Continue  ))
-    ## STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
+      ### STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
+      
      https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
       
-3. Create the TXT record where your domain's nameservers are hosted (wait a few minuites for propagation)
+3.2) Create the TXT record where your domain's nameservers are hosted (wait a few minuites for propagation)
+
+        [[here are some sample tool sites to confirm that the DNS info has been propogated]]
+        
       https://mxtoolbox.com/TXTLookup.aspx
       
       https://www.whatsmydns.net/
 
-4. Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
+3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
-1. cp ~/pokt-validator-configurator/install.sh 
+4.1) cp ~/pokt-validator-configurator/install.sh 
 
         (( no output ))
-2. ~/install.sh
+4.2) ~/install.sh
 
         ((Enter domain name for node )) - - enter the domain name that you used above in step 3
         (( [sudo] password for nodeuser: )) - - enter password
@@ -97,7 +101,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 
 
 ## Part 5 - Create Pocket Account, Start Node, Stake
-1. Continue here: https://docs.pokt.network/docs/create-validator-node
+5.1) Continue here: https://docs.pokt.network/docs/create-validator-node
 
 ### Helpful Commands
 - pocket query height           #Show what block you are synced to
