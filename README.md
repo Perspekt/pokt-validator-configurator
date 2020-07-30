@@ -5,11 +5,39 @@ Scripts to setup Pocket Network validator node updated for RC-0.4.3
 # Instructions
 ## Part 1 - Create Unix User
 1. git clone https://github.com/Perspekt/pokt-validator-configurator.git
+
+(( Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done. ))
+
 2. cd pokt-validator-configurator
+
+(( comand prompt now ends with :~/pokt-validator-configurator#  ))
+
 3. chmod 755 ./*.sh
+
+(( no output generated ))
+
 4. ./makeuser.sh
-5. Enter and confirm user password
-6. Press Enter 5 times to skip user info
+
+(( Enter name of new Unix user: )) - - enter new username
+
+(( New password: )) -- enter password
+
+(( Retype new password: )) -- reenter password
+
+(( Full Name []: )) -- hit enter to leave blank
+
+(( Room Number []: )) -- hit enter to leave blank
+
+(( Work Phone []: )) -- hit enter to leave blank
+
+(( Home Phone []:)) -- hit enter to leave blank
+
+(( Other []: )) -- hit enter to leave blank
+
+(( Is the information correct? [Y/n]))  - - Y
+
+(( command prompt now starts with the username that you just created ))
+
 
 ## Part 2 - Run Dependancy Installer and Reboot
 1. git clone https://github.com/Perspekt/pokt-validator-configurator.git
