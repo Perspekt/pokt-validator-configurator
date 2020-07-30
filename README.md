@@ -90,7 +90,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
-4.1) cp ~/pokt-validator-configurator/install.sh 
+4.1) cp ~/pokt-validator-configurator/install.sh ~
 
         (( no output ))
 4.2) ~/install.sh
