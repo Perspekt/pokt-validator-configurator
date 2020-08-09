@@ -1,6 +1,8 @@
 # pokt-validator-configurator
 Scripts to setup Pocket Network validator node updated for RC-0.5.0  
 (Assumes fresh Ubuntu Install logged in as root without new user)
+( Tested on UBUNTU VERSION 20.04 = Successfully )
+( Does not work on version 18 )
 
 # Instructions
 ## Part 1 - Create Unix User
