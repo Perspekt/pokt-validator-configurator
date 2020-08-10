@@ -1,5 +1,5 @@
 # pokt-validator-configurator
-Scripts to setup Pocket Network validator node updated for RC-0.4.3  
+Scripts to setup Pocket Network validator node updated for RC-0.5.0  
 (Assumes fresh Ubuntu Install logged in as root without new user)
 
 # Instructions
