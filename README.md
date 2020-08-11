@@ -53,7 +53,8 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 2.3) ./dependencyinstaller.sh
 
         (( [sudo] password for nodeuser: )) - - enter password
-        ((  takes aproximately 2 minutes to complete,  pauses several times durring process, several "error" and warning lines but it's OK))
+        ((  takes aproximately 3 minutes to complete,  pauses several times durring process))
+        (( several "error" and warning lines but it's OK))
         (( Do you want to continue? [y/N] )) - - Y
         (( Do you want to install the latest go version? [y/N] )) - - Y
         (( STARTING NEW SHELL TO LOAD G-INSTALL... ))
@@ -71,7 +72,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         (( Are you OK with .... (Y)es/(N)o: )) - - Y
         ((Please deploy a DNS TXT record under the name
               _acme-challenge.node2.2jx.com with the following value:
-
+_acme-challenge.node4.2jx.com
               n_feack6y2hTfg9ce3dWhpJEqjC6z2kbU7lOQDYINXY
 
                Before continuing, verify the record is deployed.
@@ -97,9 +98,10 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         (( no output ))
 4.2) ~/install.sh
 
-        ((Enter domain name for node )) - - enter the domain name that you used above in step 3
+        ((Enter domain name for node )) - - enter the domain name from above in step 3
         (( [sudo] password for nodeuser: )) - - enter password
-        [[ takes about 1 minute, pauses several times, ends with NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5 ]]
+        [[ takes about 2 minutes, pauses several times ))
+        ((ends with NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5 ]]
 
 
 ## Part 5 - Create Pocket Account
