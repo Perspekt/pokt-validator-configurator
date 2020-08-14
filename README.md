@@ -23,7 +23,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         (( Enter name of new Unix user: )) - - enter new username
         
         (( New password: )) -- enter password
-
+pocket accounts create
         (( Retype new password: )) -- reenter password
 
         (( Full Name []: )) -- hit enter to leave blank
@@ -79,7 +79,7 @@ _acme-challenge.node4.2jx.com
               - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                Press Enter to Continue  ))
       ### STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
-      
+      pocket accounts create
      https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
       
 3.2) Create the TXT record where your domain's nameservers are hosted (wait a few minuites for propagation)
@@ -107,7 +107,7 @@ _acme-challenge.node4.2jx.com
 ## Part 5 - Create Pocket Account
 5.1) pocket accounts create
 
-5.1) Continue here: https://docs.pokt.network/docs/create-validator-node
+5.2) Continue here: https://docs.pokt.network/docs/create-validator-node
 
 ### Helpful Commands
 - pocket query height           #Show what block you are synced to
