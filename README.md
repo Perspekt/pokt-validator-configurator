@@ -23,7 +23,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         (( Enter name of new Unix user: )) - - enter new username
         
         (( New password: )) -- enter password
-pocket accounts create
+
         (( Retype new password: )) -- reenter password
 
         (( Full Name []: )) -- hit enter to leave blank
