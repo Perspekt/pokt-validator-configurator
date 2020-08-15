@@ -110,16 +110,16 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 (( insert the text below ... ))  
 ((Change xxx.xxx.xxx.xxx for the IP of the full node which will provide relays))  
 
-[
-  {
-    "id": "0001",
-    "url": "http://xxx.xxx.xxx.xxx:8081"
-  },
-  {
-    "id": "0021",
-    "url": "http://xxx.xxx.xxx.xxx:8545"
-  }
-]
+[  
+  {  
+    "id": "0001",  
+    "url": "http://xxx.xxx.xxx.xxx:8081"  
+  },  
+  {  
+    "id": "0021",  
+    "url": "http://xxx.xxx.xxx.xxx:8545"  
+  }  
+]  
 
 5.3) Continue here: https://docs.pokt.network/docs/create-validator-node
 
