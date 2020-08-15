@@ -72,8 +72,6 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
         (( Are you OK with .... (Y)es/(N)o: )) - - Y
         ((Please deploy a DNS TXT record under the name
               _acme-challenge.node2.2jx.com with the following value:
-_acme-challenge.node4.2jx.com
-              n_feack6y2hTfg9ce3dWhpJEqjC6z2kbU7lOQDYINXY
 
                Before continuing, verify the record is deployed.
               - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
