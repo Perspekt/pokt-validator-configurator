@@ -105,7 +105,21 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 ## Part 5 - Create Pocket Account
 5.1) pocket accounts create
 
-5.2) Continue here: https://docs.pokt.network/docs/create-validator-node
+5.2) vi .pocket/config/chains.json
+(( insert the text below ... ))
+((Change xxx.xxx.xxx.xxx for the IP of the full node which will provide relays))
+[
+  {
+    "id": "0001",
+    "url": "http://xxx.xxx.xxx.xxx:8081"
+  },
+  {
+    "id": "0021",
+    "url": "http://xxx.xxx.xxx.xxx:8545"
+  }
+]
+
+5.3) Continue here: https://docs.pokt.network/docs/create-validator-node
 
 ### Helpful Commands
 - pocket query height           #Show what block you are synced to
