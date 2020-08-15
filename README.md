@@ -106,8 +106,10 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 5.1) pocket accounts create
 
 5.2) vi .pocket/config/chains.json
-(( insert the text below ... ))
-((Change xxx.xxx.xxx.xxx for the IP of the full node which will provide relays))
+
+(( insert the text below ... ))  
+((Change xxx.xxx.xxx.xxx for the IP of the full node which will provide relays))  
+
 [
   {
     "id": "0001",
