@@ -27,7 +27,8 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 
 1.2) cd pokt-validator-configurator
 
-        comand prompt now ends with  ```diff
+        comand prompt now ends with  
+        ```diff
         + :~/pokt-validator-configurator#  ```
 
 1.3 chmod 755 ./*.sh
