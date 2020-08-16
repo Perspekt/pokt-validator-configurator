@@ -8,7 +8,7 @@
 ```
 - ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
 ```diff 
-!  Orange box or text in orange shows orange things 
+!  Orange box or text in stuff that you will type or copy paste into the terminal 
 ```
 
 # pokt-validator-configurator
@@ -20,7 +20,8 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 ```
 # Instructions
 ## Part 1 - Create Unix User
-1.1) ```git clone https://github.com/Perspekt/pokt-validator-configurator.git```
+1.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
+git clone https://github.com/Perspekt/pokt-validator-configurator.git```
 ```diff
 +  Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done.
 ```
@@ -42,17 +43,17 @@ comand prompt now ends with
 ! enter password
 + Full Name []: 
 ! hit enter to leave blank
-- Room Number []:
++ Room Number []:
 ! hit enter to leave blank
-- Work Phone []: 
++ Work Phone []: 
 ! hit enter to leave blank
-- Home Phone []:  
++ Home Phone []:  
 ! hit enter to leave blank
-- Other []: 
++ Other []: 
 ! hit enter to leave blank
-- Is the information correct? [Y/n]
++ Is the information correct? [Y/n]
 !  Y 
-- (( command prompt now starts with the username that you just created ))
++ (( command prompt now starts with the username that you just created ))
 ```
 ## Part 2 - Run Dependancy Installer and Reboot
 2.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
