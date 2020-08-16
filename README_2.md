@@ -7,9 +7,9 @@ These instructions begin where https://github.com/BenVanGithub/pokt-validator-co
 
 
 
-``` 
-pocket accounts list 
-```  
+
+> pocket accounts list 
+
 
 pocket accounts set-validator <address from list>  
 ((enter the password))   
