@@ -45,16 +45,16 @@ This document will assume you are using option 2.  If you have already copied up
 
 vi .pocket/config/keyfile.json
 
-1.) Open the secure keyfile on your PC wi/Users/cryptoedge/.ssh/known_hosts to get rid of this message.th any text editor and copy the entire contents of that file.  
+1.) Open the secure keyfile on your PC with any text editor and copy the entire contents of that file.  
 2.) Paste those contents into the keyfile.json which you are currently editing on the server.
 3.) save the file.
 
-NOTE: we are using the /Users/cryptoedge/.ssh/known_hosts to get rid of this message.path .pocket/config for convenience and consistency… it does not have to be in that specific directory nor have that specific name. 
+NOTE: we are using the path .pocket/config for convenience and consistency… it does not have to be in that specific directory nor have that specific name. 
 
 
 pocket accounts import-armored .pocket/config/keyfile.json
 
-((enter passphrase then ))…/Users/cryptoedge/.ssh/known_hosts to get rid of this message.
+((enter passphrase then ))…
 ((enter passphrase again ))…
 
 ((Account imported successfully [LongStringOfLettersAndNumbers] ))
