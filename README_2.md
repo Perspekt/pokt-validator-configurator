@@ -128,3 +128,12 @@ function fancyAlert(arg) {
    
 
 pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 node5.2jx.com:8081 mainnet 10000
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
