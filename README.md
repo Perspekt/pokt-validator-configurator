@@ -1,7 +1,7 @@
-
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 ```diff
 - red box or text in red shows important errors/messages/warnings
-``` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+``` 
 ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
 ```diff
 +  green box or text in green shows terminal output 
