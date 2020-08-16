@@ -83,30 +83,37 @@ comand prompt now ends with
 - [[ Run the following command and replace YourDomainName with your domain:]]  
 ```
 3.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
-
-        (( [sudo] password for nodeuser: )) - - enter password
-        (( Enter email .... (Enter 'c' to cancel): - - enter email
-        (( (A)gree/(C)ancel: )) - - A
-        (( (Y)es/(N)o: )) - - Y
-        (( Are you OK with .... (Y)es/(N)o: )) - - Y
-        ((Please deploy a DNS TXT record under the name
-              _acme-challenge.node2.2jx.com with the following value:
-
-               Before continuing, verify the record is deployed.
-              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-               Press Enter to Continue  ))
-      ### STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
-      pocket accounts create
-     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
+```diff
++[sudo] password for nodeuser:
+!enter password
++Enter email .... (Enter 'c' to cancel):
+!enter email
++ (A)gree/(C)ancel: )) 
+! A
++ (Y)es/(N)o: )) 
+!Y
++ Are you OK with .... (Y)es/(N)o: 
+! Y
+- STOP.. STOP.. STOP
+- The "A" record for your domain and a "TXT" record with the name and values
+- shown on your screen must be deployed and propogated across the internet
+- before continuing
++        ((Please deploy a DNS TXT record under the name
++              _acme-challenge.node2.2jx.com with the following value:
++
++               Before continuing, verify the record is deployed.
++              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
++               Press Enter to Continue  ))
+-      ### STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
+- refrence information for how to move name servers to D.O.     
+-     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
       
 3.2) Create the TXT record where your domain's nameservers are hosted (wait a few minuites for propagation)
 
-        [[here are some sample tool sites to confirm that the DNS info has been propogated]]
-        
-      https://mxtoolbox.com/TXTLookup.aspx
-      
-      https://www.whatsmydns.net/
-
+- here are some sample tool sites to confirm that the DNS info has been propogated  
+- https://mxtoolbox.com/TXTLookup.aspx
+- https://www.whatsmydns.net/
+```
 3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
