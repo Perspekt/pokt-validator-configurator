@@ -1,13 +1,24 @@
 
 ```diff
-- text in red
-+ text in green
+- text in red or proceded by a red box
+```
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+```diff
+- shows important errors/messages/warnings
+```
+
+```diff
++ text in green or proceeded by a green box
+```
+- ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
+```diff
++ shows terminal output
 ! text in orange
 # text in gray
 @@ text in purple (and bold)@@
 ```
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15 red'`
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 - ![#1589F0](https://via.placeholder.com/15/FFFF33/000000?text=+) `#FFFF33`
