@@ -160,7 +160,7 @@ comand prompt now ends with
 - However, if you are brave or are working with someone who has been through this already...
 - you may wish to move forward using part two of this guide:
 ```
-6.0) https://github.com/BenVanGithub/pokt-validator-configurator/edit/master/README2.md
+6.0) https://github.com/BenVanGithub/pokt-validator-configurator/edit/master/README_2.md
 
 
 
