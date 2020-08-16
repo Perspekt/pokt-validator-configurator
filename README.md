@@ -14,6 +14,7 @@
 - ![#1589F0](https://via.placeholder.com/15/3399FF/000000?text=+) `#3399FF`
 - ![#1589F0](https://via.placeholder.com/15/FF8C00/000000?text=+) `#FF8C00 dark orange`
 - ![#1589F0](https://via.placeholder.com/15/FFA500/000000?text=+) `#FFA500`
+- ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+) `#32CD32 lime green`
 
 
 
