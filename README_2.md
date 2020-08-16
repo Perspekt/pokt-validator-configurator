@@ -6,21 +6,14 @@ PREREQUISITES AND ASSUMPTIONS:
 These instructions begin where https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md ends.  
 
 
-1.
+1. > pocket accounts list 
 
-> pocket accounts list 
-
-2.
-
-pocket accounts set-validator <address from list>  
+1. >pocket accounts set-validator <address from list>  
 ((enter the password))   
 
-3.
-pocket start  
+1. >pocket start  
 
-1. 
-
-wait for it to sync  
+1. wait for it to sync  
 
 after synced… stop it with control-C … restart it with:
 
