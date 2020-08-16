@@ -31,8 +31,8 @@ comand prompt now ends with
 ```diff
 + :~/pokt-validator-configurator#  
 ```
-1.3  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) chmod 755 ./*.sh
-        (( no output generated ))
+1.3  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) chmod 755 ./*.sh  
+        (( no output generated ))  
 1.4  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ./makeuser.sh
 ```diff
 + Enter name of new Unix user:  
