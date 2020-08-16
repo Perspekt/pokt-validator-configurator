@@ -12,11 +12,12 @@
 ```
 
 # pokt-validator-configurator
-Scripts to setup Pocket Network validator node updated for RC-0.5.0  
-(Assumes fresh Ubuntu Install logged in as root without new user)  
-( Tested on UBUNTU VERSION 20.04 = Successfully )  
-( Does not work on version 18 )  
-
+Scripts to setup Pocket Network validator node updated for RC-0.5.0 
+```diff
+- Assumes fresh Ubuntu Install logged in as root without new user  
+- Tested on UBUNTU VERSION 20.04 = Successfully  
+- Does not work on version 18  
+```
 # Instructions
 ## Part 1 - Create Unix User
 1.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
@@ -123,7 +124,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 
 (( insert the text below ... ))  
 ((Change xxx.xxx.xxx.xxx for the IP of the full node which will provide relays))  
-
+```json
 [  
   {  
     "id": "0001",  
@@ -134,7 +135,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
     "url": "http://xxx.xxx.xxx.xxx:8545"  
   }  
 ]  
-
+```
 5.3) Continue here: https://docs.pokt.network/docs/create-validator-node
 
 ### Helpful Commands
