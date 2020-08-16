@@ -1,13 +1,12 @@
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 ```diff
-- red box or text in red shows important errors/messages/warnings
-```
+- red box or text in red shows important errors/messages/warnings ```
 - ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
 ```diff
-+  green box or text in green shows terminal output
-```
++  green box or text in green shows terminal output ```
 - ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
-```diff !  Orange box ortext in orange shows orange things```
+```diff 
+!  Orange box ortext in orange shows orange things ```
 ```diff
 # text in gray
 @@ text in purple (and bold)@@
