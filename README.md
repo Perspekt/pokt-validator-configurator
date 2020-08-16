@@ -108,7 +108,7 @@ comand prompt now ends with
 - refrence information for how to move name servers to D.O.     
 -     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
       
-3.2) Create the TXT record where your domain's nameservers are hosted (wait a few minuites for propagation)
+3.2) Create the TXT record where your domain's nameservers are hosted (waitand confirm propagation)
 
 - here are some sample tool sites to confirm that the DNS info has been propogated  
 - https://mxtoolbox.com/TXTLookup.aspx
@@ -117,24 +117,28 @@ comand prompt now ends with
 3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Part 4 - Run the script to automate the Pocket-cli install and file configurations
-4.1) cp ~/pokt-validator-configurator/install.sh ~
+4.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cp ~/pokt-validator-configurator/install.sh ~
 
         (( no output ))
-4.2) ~/install.sh
-
-        ((Enter domain name for node )) - - enter the domain name from above in step 3
-        (( [sudo] password for nodeuser: )) - - enter password
-        [[ takes about 2 minutes, pauses several times ))
-        ((ends with NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5 ]]
+4.2)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ~/install.sh
+```diff
++ Enter domain name for node 
+! enter the domain name from above in step 3
++ [sudo] password for nodeuser: 
+! enter password
+- takes about 3 minutes, pauses several times
+- ends with:
++ NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5
 
 
 ## Part 5 - Create Pocket Account
-5.1) pocket accounts create
+5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 
-5.2) vi .pocket/config/chains.json
+5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
 
-(( insert the text below ... ))  
-((Change xxx.xxx.xxx.xxx for the IP of the full node which will provide relays))  
+- insert the text below:  
+- Change xxx.xxx.xxx.xxx for the IPs of the full nodes which will provide relays 
+```
 ```json
 [  
   {  
