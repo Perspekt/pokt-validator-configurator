@@ -129,13 +129,13 @@ comand prompt now ends with
 - takes about 3 minutes, pauses several times
 - ends with:
 + NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5
-
+```
 
 ## Part 5 - Create Pocket Account
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 
 5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
-
+```diff
 - insert the text below:  
 - Change xxx.xxx.xxx.xxx for the IPs of the full nodes which will provide relays 
 ```
