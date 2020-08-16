@@ -7,7 +7,7 @@ These instructions begin where https://github.com/BenVanGithub/pokt-validator-co
 
 
 
-pocket accounts list
+``` pocket accounts list ```  
 
 pocket accounts set-validator <address from list>  
 ((enter the password))   
@@ -20,15 +20,15 @@ after synced… stop it with control-C … restart it with:
 
 pocket start --simulateRelay
 
-ETH test (replace "yourDomain.com" with the URL of your Pocket Validator Node)
-         (replae "10.116.0.4" with the IP of an Ethereum Full Node that will accept RPCs)
+ETH test (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
+         (replace "10.116.0.4" with the IP of an Ethereum Full Node that will accept RPCs)  
 
 ``` 
 curl -X POST --data '{"chain_url":"http://10.116.0.4:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:8081/v1/client/sim 
 ```
 
-pocket test (replace "yourDomain.com" with the URL of your Pocket Validator Node)
-         (replae "10.116.0.5" with the IP of a Pocket Full Node that will accept RPCs)
+pocket test (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
+         (replae "10.116.0.5" with the IP of a Pocket Full Node that will accept RPCs)  
 
 ``` 
 curl --insecure -X POST --data '{"chain_url":"http://10.116.0.5:8081","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://yourDomain.com:8081/v1/client/sim
@@ -38,9 +38,9 @@ Everything is testing good?
  OK… let’s load up the wallet 
 
 
-You have two options:
-1.)  copy it up using an FTP program such as filezilla.
-2.)  Create it on the server using “vi” and copy/paste the contents from your local device.
+You have two options:  
+1.)  copy it up using an FTP program such as filezilla.  
+2.)  Create it on the server using “vi” and copy/paste the contents from your local device. 
 
 This document will assume you are using option 2.  If you have already copied up the file using another method, skip to the line that starts…. “pocket accounts import-armored..”
 
