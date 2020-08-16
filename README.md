@@ -20,7 +20,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 ```
 # Instructions
 ## Part 1 - Create Unix User
-1.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
+1.1) ```git clone https://github.com/Perspekt/pokt-validator-configurator.git```
 ```diff
 +  Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done.
 ```
