@@ -6,15 +6,19 @@ PREREQUISITES AND ASSUMPTIONS:
 These instructions begin where https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md ends.  
 
 
-
+1.
 
 > pocket accounts list 
 
+2.
 
 pocket accounts set-validator <address from list>  
 ((enter the password))   
 
+3.
 pocket start  
+
+1. 
 
 wait for it to sync  
 
@@ -123,6 +127,11 @@ function fancyAlert(arg) {
 }
 ```
 
-
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+   
 
 pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 node5.2jx.com:8081 mainnet 10000
