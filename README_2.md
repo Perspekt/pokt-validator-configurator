@@ -153,3 +153,23 @@ line four
 
 https://placehold.it/150/ffffff/ff0000?text=hello
 
+### ignore the text below... It is for format testing
+
+```diff
+# text in gray
+next line
+@@ text in purple (and bold)@@
+```
+
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15 red'`
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+- ![#1589F0](https://via.placeholder.com/15/FFFF33/000000?text=+) `#FFFF33`
+- ![#1589F0](https://via.placeholder.com/15/3399FF/000000?text=+) `#3399FF`
+- ![#1589F0](https://via.placeholder.com/15/FF8C00/000000?text=+) `#FF8C00 dark orange`
+- ![#1589F0](https://via.placeholder.com/15/FFA500/000000?text=+) `#FFA500`
+- ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) `#FFC000 orange/gold`
+- ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+) `#32CD32 lime green`
+- ![#1589F0](https://via.placeholder.com/15/9400D3/000000?text=+) `#9400D3 dark violet`
+
+
