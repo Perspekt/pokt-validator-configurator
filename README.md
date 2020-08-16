@@ -145,6 +145,7 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 
 ```diff
 # text in gray
+next line
 @@ text in purple (and bold)@@
 ```
 
