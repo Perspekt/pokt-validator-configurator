@@ -56,7 +56,7 @@ comand prompt now ends with
 + (( command prompt now starts with the username that you just created ))
 ```
 ## Part 2 - Run Dependancy Installer and Reboot
-2.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) git clone https://github.com/BenVanGithub/pokt-validator-configurator
+2.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) git clone https://github.com/BenVanGithub/pokt-validator-configurator.git
 ```diff
 +      Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.
 ```        
@@ -160,7 +160,7 @@ comand prompt now ends with
 - However, if you are brave or are working with someone who has been through this already...
 - you may wish to move forward using part two of this guide:
 ```
-6.0) https://github.com/BenVanGithub/pokt-validator-configurator/edit/master/README_2.md
+6.0) https://github.com/BenVanGithub/pokt-validator-configurator/README_2.md
 
 
 
