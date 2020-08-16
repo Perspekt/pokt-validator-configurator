@@ -5,6 +5,10 @@ and using that address to stake a validator on Pocket’s Mainnet.
 PREREQUISITES AND ASSUMPTIONS:
 These instructions begin where https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md ends.  
 
+#1
+mojombo#1
+mojombo/github-flavored-markdown#1
+
 pocket accounts list
 
 pocket accounts set-validator <address from list>  
