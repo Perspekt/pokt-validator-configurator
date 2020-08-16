@@ -1,6 +1,6 @@
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 ```diff
-- red box ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) or text in red shows important errors/messages/warnings
+- red box or text in red shows important errors/messages/warnings
 ```
 ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
 ```diff
@@ -26,7 +26,7 @@ git clone https://github.com/Perspekt/pokt-validator-configurator.git```
 +  Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done.
 ```
 
-1.2) ```cd pokt-validator-configurator```   
+1.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cd pokt-validator-configurator  
 comand prompt now ends with
 ```diff
 + :~/pokt-validator-configurator#  
