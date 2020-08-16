@@ -104,12 +104,12 @@ comand prompt now ends with
 +               Before continuing, verify the record is deployed.
 +              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 +               Press Enter to Continue  ))
--      ### STOP HERE.. do not press enter until you have confirmed the deployment of the TXT record and value.
+- STOP.. STOP.. STOP do not press enter until you have confirmed the deployment of the TXT record and value.
 - refrence information for how to move name servers to D.O.     
 -     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
-      
-3.2) Create the TXT record where your domain's nameservers are hosted (waitand confirm propagation)
-
+```     
+3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
+```diff
 - here are some sample tool sites to confirm that the DNS info has been propogated  
 - https://mxtoolbox.com/TXTLookup.aspx
 - https://www.whatsmydns.net/
