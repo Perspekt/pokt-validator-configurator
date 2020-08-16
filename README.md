@@ -56,7 +56,7 @@ comand prompt now ends with
 + (( command prompt now starts with the username that you just created ))
 ```
 ## Part 2 - Run Dependancy Installer and Reboot
-2.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) git clone https://github.com/Perspekt/pokt-validator-configurator.git
+2.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) git clone https://github.com/BenVanGithub/pokt-validator-configurator
 ```diff
 +      Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.
 ```        
@@ -151,7 +151,19 @@ comand prompt now ends with
   }  
 ]  
 ```
-5.3) Continue here: https://docs.pokt.network/docs/create-validator-node
+## Part 6 - Create Validator, Test Relays, Stake Accont, & Finish up.
+```diff
+-  At this time it is safeist to proceed from the official Pocket documentation:
+```
+*6.0) Continue here: https://docs.pokt.network/docs/create-validator-node
+```diff
+- However, if you are brave or are working with someone who has been through this already...
+- you may wish to move forward using part two of this guide:
+```
+6.0) https://github.com/BenVanGithub/pokt-validator-configurator/edit/master/README2.md
+
+
+
 
 ### Helpful Commands
 - pocket query height           #Show what block you are synced to
