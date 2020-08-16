@@ -16,8 +16,7 @@
 - ![#1589F0](https://via.placeholder.com/15/FFA500/000000?text=+) `#FFA500`
 - ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) `#FFC000 orange/gold`
 - ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+) `#32CD32 lime green`
-
-
+- ![#1589F0](https://via.placeholder.com/15/9400D3/000000?text=+) `#9400D3 dark violet`
 
 
 # pokt-validator-configurator
