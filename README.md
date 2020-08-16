@@ -12,8 +12,8 @@
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 - ![#1589F0](https://via.placeholder.com/15/FFFF33/000000?text=+) `#FFFF33`
 - ![#1589F0](https://via.placeholder.com/15/3399FF/000000?text=+) `#3399FF`
+- ![#1589F0](https://via.placeholder.com/15/FF8C00/000000?text=+) `#FF8C00 dark orange`
 - ![#1589F0](https://via.placeholder.com/15/FFA500/000000?text=+) `#FFA500`
-- ![#1589F0](https://via.placeholder.com/15/FFA500/000000?) `#FFA500`
 
 
 
