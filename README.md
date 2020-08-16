@@ -8,7 +8,7 @@
 ```
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
 ```diff 
-!  Orange box or text in stuff that you will type or copy paste into the terminal 
+!  Orange box or text is stuff that you will type or copy paste into the terminal 
 ```
 
 # pokt-validator-configurator
@@ -31,9 +31,9 @@ comand prompt now ends with
 ```diff
 + :~/pokt-validator-configurator#  
 ```
-1.3 chmod 755 ./*.sh
+1.3  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) chmod 755 ./*.sh
         (( no output generated ))
-1.4 ./makeuser.sh
+1.4  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ./makeuser.sh
 ```diff
 + Enter name of new Unix user:  
 ! enter new username
@@ -56,28 +56,33 @@ comand prompt now ends with
 + (( command prompt now starts with the username that you just created ))
 ```
 ## Part 2 - Run Dependancy Installer and Reboot
-2.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
-
-        (( Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.))
-        
-2.2) cd pokt-validator-configurator
-
-        (( command prompt ends with :~/pokt-validator-configurator$ ))
-        
-2.3) ./dependencyinstaller.sh
-
-        (( [sudo] password for nodeuser: )) - - enter password
-        ((  takes aproximately 3 minutes to complete,  pauses several times durring process))
-        (( several "error" and warning lines but it's OK))
-        (( Do you want to continue? [y/N] )) - - Y
-        (( Do you want to install the latest go version? [y/N] )) - - Y
-        (( STARTING NEW SHELL TO LOAD G-INSTALL... ))
-
+2.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) git clone https://github.com/Perspekt/pokt-validator-configurator.git
+```diff
++      Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.
+```        
+2.2)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cd pokt-validator-configurator
+```diff
++        (( command prompt ends with :~/pokt-validator-configurator$ ))
+```        
+2.3)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ./dependencyinstaller.sh
+```diff
++[sudo] password for nodeuser:
+! enter password
+- takes aproximately 3 minutes to complete,  pauses several times durring process
+- several "error" and warning lines but it's OK
++ Do you want to continue? [y/N] 
+! Y
++ Do you want to install the latest go version? [y/N] 
+! Y
++ STARTING NEW SHELL TO LOAD G-INSTALL...
+```
 2.4) Continue to Part 3 (you are dropped into a new shell)
 
 ## Part 3 - Create SSL Cert
-   [[ Run the following command and replace YourDomainName with your domain:]]  
-3.1) sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
+```diff
+- [[ Run the following command and replace YourDomainName with your domain:]]  
+```
+3.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) sudo certbot certonly -d  YourDomainName --manual --preferred-challenges dns 
 
         (( [sudo] password for nodeuser: )) - - enter password
         (( Enter email .... (Enter 'c' to cancel): - - enter email
