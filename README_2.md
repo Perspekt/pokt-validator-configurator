@@ -6,6 +6,7 @@ PREREQUISITES AND ASSUMPTIONS:
 These instructions begin where https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md ends.  
 
 
+
 pocket accounts list
 
 pocket accounts set-validator <address from list>  
@@ -19,16 +20,22 @@ after synced… stop it with control-C … restart it with:
 
 pocket start --simulateRelay
 
-ETH test
+ETH test (replace "yourDomain.com" with the URL of your Pocket Validator Node)
+         (replae "10.116.0.4" with the IP of an Ethereum Full Node that will accept RPCs)
 
-curl -X POST --data '{"chain_url":"http://10.116.0.4:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://node3.2jx.com:8081/v1/client/sim
+``` 
+curl -X POST --data '{"chain_url":"http://10.116.0.4:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:8081/v1/client/sim 
+```
 
-pocket test
+pocket test (replace "yourDomain.com" with the URL of your Pocket Validator Node)
+         (replae "10.116.0.5" with the IP of a Pocket Full Node that will accept RPCs)
 
-curl --insecure -X POST --data '{"chain_url":"http://10.116.0.5:8081","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://node1.2jx.com:8081/v1/client/sim
+``` 
+curl --insecure -X POST --data '{"chain_url":"http://10.116.0.5:8081","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://yourDomain.com:8081/v1/client/sim
+```
 
-- - - - Everything is testing good? - - -
-- - - -  OK… let’s load up the wallet - - -
+Everything is testing good? 
+ OK… let’s load up the wallet 
 
 
 You have two options:
@@ -69,9 +76,8 @@ In a separate terminal window. Type:
 pocket start
 (( Tons of red and green output ))
 
-- - - if stakeing with fresh pocket skip this section ---
-
------  if loading funds already in the genesis file then ----
+if stakeing with fresh pocket skip this section 
+ if loading funds already in the genesis file then 
 Back in the original terminal window type:
 
 pocket nodes unjail LongStringOfLettersAndNumbersFromAbove mainnet 10000
@@ -104,7 +110,16 @@ No point in leaving it there (it’s encrypted but still, better safe than sorry
 rm .pocket/config/keyfile.json
 (( no output ))
 
+## below this line are just some formating samples for learning github's markdown options  
 
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
 
 
 
