@@ -31,32 +31,29 @@ comand prompt now ends with
 + :~/pokt-validator-configurator#  
 ```
 1.3 chmod 755 ./*.sh
-
         (( no output generated ))
-
 1.4 ./makeuser.sh
-
-        (( Enter name of new Unix user: )) - - enter new username
-        
-        (( New password: )) -- enter password
-
-        (( Retype new password: )) -- reenter password
-
-        (( Full Name []: )) -- hit enter to leave blank
-
-        (( Room Number []: )) -- hit enter to leave blank
-
-        (( Work Phone []: )) -- hit enter to leave blank
-
-        (( Home Phone []:)) -- hit enter to leave blank
-
-        (( Other []: )) -- hit enter to leave blank
-
-        (( Is the information correct? [Y/n]))  - - Y
-
-        (( command prompt now starts with the username that you just created ))
-
-
+```diff
++ Enter name of new Unix user:  
+! enter new username
++ New password: 
+! enter password
++ Retype new password:
+! enter password
++ Full Name []: 
+! hit enter to leave blank
+- Room Number []:
+! hit enter to leave blank
+- Work Phone []: 
+! hit enter to leave blank
+- Home Phone []:  
+! hit enter to leave blank
+- Other []: 
+! hit enter to leave blank
+- Is the information correct? [Y/n]
+!  Y 
+- (( command prompt now starts with the username that you just created ))
+```
 ## Part 2 - Run Dependancy Installer and Reboot
 2.1) git clone https://github.com/Perspekt/pokt-validator-configurator.git
 
