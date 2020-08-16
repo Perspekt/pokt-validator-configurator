@@ -140,10 +140,10 @@ pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,002
 ```diff
 line one  
 line two  
-+ line three "green"???
++ line three "green"??? +
 line four
 - line five "red"???
-line six
+!! line six !!
 ```
 
 
