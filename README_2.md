@@ -1,6 +1,6 @@
 ```diff
-@@ DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT 
-@@ THIS DOCUMENT IS NOT READY FOR PUBLICATION.  USE IT ONLY IN CONCERT WITH SOMEONE WHO KNOWS HOW THIS WORKS!!
+@@ DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT @@
+@@ THIS DOCUMENT IS NOT READY FOR PUBLICATION.  USE IT ONLY IN CONCERT WITH SOMEONE WHO KNOWS HOW THIS WORKS!! @@
 ```
 ##  Instructions for loading an existing wallet from a secure json keyfile  
 ##  and using that address to stake a validator on Pocket’s Mainnet.
@@ -10,35 +10,44 @@
 These instructions continue from: https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md   
 Please be sure you have completed those steps before continuing here. 
 
-pocket accounts list 
-
-pocket accounts set-validator <address from list>  
-((enter the password))   
-
-6.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start  
-
-wait for it to sync  
-
-after synced… stop it with control-C … restart it with:
-
-pocket start --simulateRelay
-
-ETH test (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
-         (replace "10.116.0.4" with the IP of an Ethereum Full Node that will accept RPCs)  
-
-``` 
-curl -X POST --data '{"chain_url":"http://10.116.0.4:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:8081/v1/client/sim 
+## Step 6 Create Validator
+6.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts list 
+```diff
+- you should see only one account, the one that you created in step 5.1
 ```
-
-pocket test (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
-         (replae "10.116.0.5" with the IP of a Pocket Full Node that will accept RPCs)  
-
-``` 
-curl --insecure -X POST --data '{"chain_url":"http://10.116.0.5:8081","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://yourDomain.com:8081/v1/client/sim
+6.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts set-validator <address from 6.1 above>
+```diff
++ Passphrase
+! emptyaddress
 ```
+## Step 7 Sync the blockchain and test
+7.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start  
+```diff
+- wait for it to sync the blockchain
+- You can open another terminal window to the same server with the same account and type:
+! pocket query height
+- to see the block height progress..
+- when it has synced… stop it with <control>C and restart it with:
+```
+7.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)pocket start --simulateRelay
 
-Everything is testing good? 
- OK… let’s load up the wallet 
+7.3)  Ethereum Relay Test:
+```diff
+-  (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
+-  (replace "xxx.xxx.xxx.xxx" with the IP of an Ethereum Full Node that will accept RPCs)  
+``` 
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) curl -X POST --data '{"chain_url":"http://xxx.xxx.xxx.xxx:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:8081/v1/client/sim 
+
+7.4) Pocket Relay Test
+```diff
+-  (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
+-  (replae "xxx.xxx.xxx.xxx" with the IP of a Pocket Full Node that will accept RPCs)  
+``` 
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) curl --insecure -X POST --data '{"chain_url":"http://xxx.xxx.xxx.xxx:8081","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://yourDomain.com:8081/v1/client/sim
+
+
+# Step 8 - Load Wallet
+
 
 
 You have two options:  
