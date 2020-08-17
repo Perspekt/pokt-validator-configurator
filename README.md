@@ -79,6 +79,8 @@ comand prompt now ends with
 2.4) Continue to Part 3 (you are dropped into a new shell)
 
 ## Step 3 - Create SSL Cert
+
+
 ```diff
 - [[ Run the following command and replace YourDomainName with your domain:]]  
 ```
