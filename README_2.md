@@ -95,7 +95,7 @@ You have two options:
 ```
 ## Step 10 Set the Validator address and Restart the node
 
-10.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts set-validator <Validator-Address>
+10.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts set-validator < Validator-Address >
 ```diff
 +passphrase
 !<<EnterYourPassphrase>>
@@ -133,7 +133,7 @@ You have two options:
 ```
 12.2 Verify that you have been let out of jail
 
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket query node <validator address>
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket query node < validator address >
   ```diff
 - requires a block confirmation before success...could take up to 15 minutes
 - when successful output contains...
