@@ -127,7 +127,7 @@ function fancyAlert(arg) {
    1. Item 3b
    
 
-pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 node5.2jx.com:8081 mainnet 10000
+pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 http://node5.2jx.com:8081 mainnet 10000
 
 ```diff
 - text in red
