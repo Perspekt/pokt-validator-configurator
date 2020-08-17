@@ -29,7 +29,7 @@ Please be sure you have completed those steps before continuing here.
 - to see the block height progress..
 - when it has synced… stop it with <control>C and restart it with:
 ```
-7.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)pocket start --simulateRelay
+7.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start --simulateRelay
 
 7.3)  Ethereum Relay Test:
 ```diff
