@@ -111,8 +111,7 @@ You have two options:
 ```diff
 @@  Step 11 is still under construction                                  @@
 @@  refer to the instructions at the official Pocket developers web-site @@
-
-
+```
 ## Step 12 Unjail (only necessary for Genesis file funding)
 ```diff
 - change "<validator address>" to the actual Validator address from 10.1
@@ -138,8 +137,8 @@ You have two options:
 - requires a block confirmation before success...could take up to 15 minutes
 - when successful output contains...
 + "jailed": false,
-
-## Step 13  Happy and Joy... We Be Validating... Let's clean up a bit.
+```
+## Step 13  Happy and Joy... We Be Validating!.. Let's clean up a bit.
 let’s remove the secure keyfile that we created or uploaded earlier… 
 No point in leaving it there (it’s encrypted but still, better safe than sorry)
 13.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) rm .pocket/config/keyfile.json
