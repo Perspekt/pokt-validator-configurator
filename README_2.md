@@ -1,7 +1,3 @@
-```diff
-@@ DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT @@
-@@ THIS DOCUMENT IS NOT READY FOR PUBLICATION.  USE IT ONLY IN CONCERT WITH SOMEONE WHO KNOWS HOW THIS WORKS!! @@
-```
 ##  Instructions for loading an existing wallet from a secure json keyfile  
 ##  and using that address to stake a validator on Pocket’s Mainnet.
 
@@ -84,7 +80,7 @@ You have two options:
 @@ it does not have to be in that specific directory nor have that specific name. @@
 ```
 
-9.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)pocket accounts import-armored .pocket/config/keyfile.json
+9.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts import-armored .pocket/config/keyfile.json
 ```diff
 +passphrase
 !<<EnterYourPassphrase>>
