@@ -30,7 +30,7 @@ Please be sure you have completed those steps before continuing here.
 ```
 ```
 [  
-  {  
+  {  pocket accounts create
     "id": "0001",  
     "url": "http://xxx.xxx.xxx.xxx:8081"  
   },  
@@ -64,64 +64,72 @@ Please be sure you have completed those steps before continuing here.
 ``` diff
 + produces a massive wall of text if successful
 ```
+8.4) Stop the node <control>c
 
-## Step 9 - Load Wallet
+## Step 9 - Load Wallet and Import Key
 
 You have two options:  
 1.)  copy it up using an FTP program such as filezilla.  
 2.)  Create it on the server using “vi” and copy/paste the contents from your local device. 
-
-This document will assume you are using option 2.  If you have already copied up the file using another method, skip to the line that starts…. “pocket accounts import-armored..”
-
-9.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/keyfile.json
-
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)1.) Open the secure keyfile on your PC with any text editor and copy the entire contents of that file.  
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)2.) Paste those contents into the keyfile.json which you are currently editing on the server.
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.) save the file.
+```diff
+This document will assume you are using option 2.  If you have already copied up the file using another method, skip to 9.2
+```
+9.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/keyfile.json  
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)9.1.1) Open the secure keyfile on your PC with any text editor and copy the entire contents of that file.  
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)9.1.2) Paste those contents into the keyfile.json which you are currently editing on the server.  
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)9.1.3) save the file.
 ```diff
 @@ NOTE: we are using the path .pocket/config for convenience and consistency…  @@
 @@ it does not have to be in that specific directory nor have that specific name. @@
 ```
 
-pocket accounts import-armored .pocket/config/keyfile.json
+9.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)pocket accounts import-armored .pocket/config/keyfile.json
+```diff
++passphrase
+!<<EnterYourPassphrase>>
++passphrase
+!<<EnterYourPassphrase>> again
++ Account imported successfully [LongStringOfLettersAndNumbers] 
+- This is your Validator-Address to be used below and for future refrence
+```
+## Step 10 Set the Validator address and Restart the node
 
-((enter passphrase then ))…
-((enter passphrase again ))…
+10.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts set-validator <Validator-Address>
+```diff
++passphrase
+!<<EnterYourPassphrase>>
+```
+10.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start
 
-((Account imported successfully [LongStringOfLettersAndNumbers] ))
+## Step 11 Stake the node
+```diff
+- if you are using funds from the genesis block, you are already staked.
+- Skip to step 12
+```
+11.1) - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Building the stake commad...
 
 
+## Step 12 Unjail (only necessary for Genesis file funding)
+```diff
+- change "<validator address>" to the actual Validator address from 10.1
+```
+12.1 )![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket nodes unjail <validator address> mainnet 10000
+ ```diff 
++ passphrase
+! enter passphrase
+  
+- may fail [code: 4 ] don’t panic.. try again go to 12.1
+- may take several attempts (6 is my personal record :-)  
+- Not sure if this is a timing error or network instability.
 
-pocket accounts set-validator LongStringOfLettersAndNumbersFromAbove
+- successful response ends with json output similar too
 
-((passphrase then no-output))
++    "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"unjail_validator\"}]}]}]",
++    "txhash": "4EBA2A29D2CB09AFCB084BF988743092BEF912B5DD6E5D50A4A941522A05946C"
 
-Review the chains.json just to make sure everything looks good. In particular make sure you have an entry for id: 0001 and 0021
+12.2 Verify that you have been let out of jail
 
-cat .pocket/config/chains.json
-
-now let’s start this back baby up!
-In a separate terminal window. Type:
-
-pocket start
-(( Tons of red and green output ))
-
-if stakeing with fresh pocket skip this section 
- if loading funds already in the genesis file then 
-Back in the original terminal window type:
-
-pocket nodes unjail LongStringOfLettersAndNumbersFromAbove mainnet 10000
-((passphrase then….)
-((may fail [code: 4 ] don’t panic.. try again in two minutes))
-(( Not sure if this is a timing error or network instability))
-(( 4 nodes tested.. 1=4 trys, 2=6 trys 1=1 try ))
-(( one worked at first attempt ))
-(( success response ends with the below ))
-
-    "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"unjail_validator\"}]}]}]",
-    "txhash": "4EBA2A29D2CB09AFCB084BF988743092BEF912B5DD6E5D50A4A941522A05946C"
-}
-pocket query node LongStringOfLettersAndNumbersFromAbove
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket query node <validator address>
 (( requires a block confirmation could take up to 15 minutes ))
 (( look for…  ))
 "jailed": false,
