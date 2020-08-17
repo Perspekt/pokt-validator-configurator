@@ -1,19 +1,23 @@
-DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT  
-THIS DOCUMENT IS NOT READY FOR PUBLICATION.  USE IT ONLY IN CONCERT WITH SOMEONE WHO KNOWS HOW THIS WORKS!!   
-Instructions for loading an existing wallet from a secure json keyfile  
-and using that address to stake a validator on Pocket’s Mainnet.  
-PREREQUISITES AND ASSUMPTIONS:
-These instructions begin where https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md ends.  
+```diff
+@@ DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT/DRAFT 
+@@ THIS DOCUMENT IS NOT READY FOR PUBLICATION.  USE IT ONLY IN CONCERT WITH SOMEONE WHO KNOWS HOW THIS WORKS!!
+```
+##  Instructions for loading an existing wallet from a secure json keyfile  
+##  and using that address to stake a validator on Pocket’s Mainnet.
 
 
-1. > pocket accounts list 
+###                     PREREQUISITES AND ASSUMPTIONS:
+These instructions continue from: https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md   
+Please be sure you have completed those steps before continuing here. 
 
-1. >pocket accounts set-validator <address from list>  
+pocket accounts list 
+
+pocket accounts set-validator <address from list>  
 ((enter the password))   
 
-1. >pocket start  
+6.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start  
 
-1. wait for it to sync  
+wait for it to sync  
 
 after synced… stop it with control-C … restart it with:
 
