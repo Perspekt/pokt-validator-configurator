@@ -64,7 +64,7 @@ Please be sure you have completed those steps before continuing here.
 ``` diff
 + produces a massive wall of text if successful
 ```
-8.4) Stop the node <control>c
+8.4) Stop the node control-C
 
 ## Step 9 - Load Wallet and Import Key
 
