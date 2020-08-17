@@ -18,8 +18,8 @@ Scripts to setup Pocket Network validator node updated for RC-0.5.0
 - Tested on UBUNTU VERSION 20.04 = Successfully  
 - Does not work on version 18  
 ```
-# Instructions
-## Part 1 - Create Unix User
+# Part One - Create a Pocket Full Node
+## Step 1 - Create Unix User
 1.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
 git clone https://github.com/BenVanGithub/pokt-validator-configurator.git
 ```diff
@@ -55,7 +55,7 @@ comand prompt now ends with
 !  Y 
 + (( command prompt now starts with the username that you just created ))
 ```
-## Part 2 - Run Dependancy Installer and Reboot
+## Step 2 - Run Dependancy Installer and Reboot
 2.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) git clone https://github.com/BenVanGithub/pokt-validator-configurator.git
 ```diff
 +      Unpacking objects: 100% (38/38), 8.96 KiB | 655.00 KiB/s, done.
@@ -78,7 +78,7 @@ comand prompt now ends with
 ```
 2.4) Continue to Part 3 (you are dropped into a new shell)
 
-## Part 3 - Create SSL Cert
+## Step 3 - Create SSL Cert
 ```diff
 - [[ Run the following command and replace YourDomainName with your domain:]]  
 ```
@@ -116,7 +116,7 @@ comand prompt now ends with
 ```
 3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
-## Part 4 - Run the script to automate the Pocket-cli install and file configurations
+## Step 4 - Run the script to automate the Pocket-cli install and file configurations
 4.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cp ~/pokt-validator-configurator/install.sh ~
 
         (( no output ))
@@ -131,7 +131,7 @@ comand prompt now ends with
 + NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5
 ```
 
-## Part 5 - Create Pocket Account
+## Step 5 - Create Pocket Account
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 ```diff
 + Passphrase
@@ -157,7 +157,7 @@ comand prompt now ends with
   }  
 ]  
 ```
-## Part 6 - Create Validator, Test Relays, Stake Account, & Finish up.
+## Step 6 - Create Validator, Test Relays, Stake Account, & Finish up.
 ```diff
 -  At this time it is safeist to proceed from the official Pocket documentation:
 ```
