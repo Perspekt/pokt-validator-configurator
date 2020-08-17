@@ -9,7 +9,23 @@
 ###                     PREREQUISITES AND ASSUMPTIONS:
 These instructions continue from: https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md   
 Please be sure you have completed those steps before continuing here. 
-
+5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
+```diff
+- insert the text below:  
+- Change xxx.xxx.xxx.xxx for the IPs of the full nodes which will provide relays 
+```
+```
+[  
+  {  
+    "id": "0001",  
+    "url": "http://xxx.xxx.xxx.xxx:8081"  
+  },  
+  {  
+    "id": "0021",  
+    "url": "http://xxx.xxx.xxx.xxx:8545"  
+  }  
+]  
+```
 ## Step 6 Create Validator
 6.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts list 
 ```diff
