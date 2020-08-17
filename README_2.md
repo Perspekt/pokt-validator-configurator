@@ -107,7 +107,10 @@ You have two options:
 - if you are using funds from the genesis block, you are already staked.
 - Skip to step 12
 ```
-11.1) - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Building the stake commad...
+11.1) ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Building the stake commad.. ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+).
+```diff
+@@  Step 11 is still under construction                                  @@
+@@  refer to the instructions at the official Pocket developers web-site @@
 
 
 ## Step 12 Unjail (only necessary for Genesis file funding)
@@ -120,96 +123,25 @@ You have two options:
 ! enter passphrase
   
 - may fail [code: 4 ] don’t panic.. try again go to 12.1
-- may take several attempts (6 is my personal record :-)  
+- may take several attempts (6 is my personal record :-)  /
 - Not sure if this is a timing error or network instability.
 
 - successful response ends with json output similar too
 
 +    "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":[{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"unjail_validator\"}]}]}]",
 +    "txhash": "4EBA2A29D2CB09AFCB084BF988743092BEF912B5DD6E5D50A4A941522A05946C"
-
+```
 12.2 Verify that you have been let out of jail
 
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket query node <validator address>
-(( requires a block confirmation could take up to 15 minutes ))
-(( look for…  ))
-"jailed": false,
+  ```diff
+- requires a block confirmation before success...could take up to 15 minutes
+- when successful output contains...
++ "jailed": false,
 
-
-pocket query balance LongStringOfLettersAndNumbersFromAbove
-
-(( "balance": 990000 … or some similar number ))
-
-
-ALL Happy and Joy???
-good.
-let’s remove the secure keyfile that we created or uploaded earlier…
+## Step 13  Happy and Joy... We Be Validating... Let's clean up a bit.
+let’s remove the secure keyfile that we created or uploaded earlier… 
 No point in leaving it there (it’s encrypted but still, better safe than sorry)
-
-rm .pocket/config/keyfile.json
+13.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) rm .pocket/config/keyfile.json
 (( no output ))
-
-## below this line are just some formating samples for learning github's markdown options  
-
-
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
-
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-   
-
-pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 http://node5.2jx.com:8081 mainnet 10000
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-
-```diff
-line one  
-line two  
-+ line three "green"??? +
-line four
-- line five "red"???
-!! line six !!
-```
-
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+X) `#1589F0`
-
-
-https://placehold.it/150/ffffff/ff0000?text=hello
-
-### ignore the text below... It is for format testing
-
-```diff
-# text in gray
-next line
-@@ text in purple (and bold)@@
-```
-
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15 red'`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
-- ![#1589F0](https://via.placeholder.com/15/FFFF33/000000?text=+) `#FFFF33`
-- ![#1589F0](https://via.placeholder.com/15/3399FF/000000?text=+) `#3399FF`
-- ![#1589F0](https://via.placeholder.com/15/FF8C00/000000?text=+) `#FF8C00 dark orange`
-- ![#1589F0](https://via.placeholder.com/15/FFA500/000000?text=+) `#FFA500`
-- ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) `#FFC000 orange/gold`
-- ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+) `#32CD32 lime green`
-- ![#1589F0](https://via.placeholder.com/15/9400D3/000000?text=+) `#9400D3 dark violet`
-
 
