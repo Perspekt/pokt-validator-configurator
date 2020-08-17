@@ -133,7 +133,12 @@ comand prompt now ends with
 
 ## Part 5 - Create Pocket Account
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
-
+```diff
++ Passphrase
+! emptyaddress
++ Account generated successfully:
++ Address: LongStringOfLettersAndNumbers
+```
 5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
 ```diff
 - insert the text below:  
