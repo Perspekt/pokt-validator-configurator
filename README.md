@@ -148,37 +148,10 @@ comand prompt now ends with
 5.4) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start
 
 ## Whoot, Whoot you have a working full node!
-
-5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
 ```diff
-- insert the text below:  
-- Change xxx.xxx.xxx.xxx for the IPs of the full nodes which will provide relays 
-```
-```
-[  
-  {  
-    "id": "0001",  
-    "url": "http://xxx.xxx.xxx.xxx:8081"  
-  },  
-  {  
-    "id": "0021",  
-    "url": "http://xxx.xxx.xxx.xxx:8545"  
-  }  
-]  
-```
-## Step 6 - Create Validator, Test Relays, Stake Account, & Finish up.
-```diff
--  At this time it is safeist to proceed from the official Pocket documentation:
-```
-*6.0) Continue here: https://docs.pokt.network/docs/create-validator-node
-```diff
-- However, if you are brave or are working with someone who has been through this already...
-- you may wish to move forward using part two of this guide:
+-  If you wish to continue forward and convert your node into a Validator go to:
 ```
 6.0) https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README_2.md
-
-
-
 
 ### Helpful Commands
 - pocket query height           #Show what block you are synced to
