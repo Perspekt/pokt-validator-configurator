@@ -135,6 +135,7 @@ comand prompt now ends with
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 ```diff
 + Passphrase
+- we use a simple passphrase her because this account will not have any money in it.
 ! emptyaddress
 + Account generated successfully:
 + Address: LongStringOfLettersAndNumbers
