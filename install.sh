@@ -78,9 +78,11 @@ echo POPULATING pocket-proxy.conf FILE...
 sudo bash -c 'cat > /etc/nginx/sites-available/pocket-proxy.conf  <<EOF
 server {
    add_header Access-Control-Allow-Origin "*";
+   listen 443 ssl;
+   listen [::]:443 ssl;
    listen 8081 ssl;
    listen [::]:8081 ssl;
-   ssl on;
+#   ssl on;
    ssl_certificate /etc/letsencrypt/live/changeThis.com/fullchain.pem;
    ssl_certificate_key /etc/letsencrypt/live/changeThis.com/privkey.pem;
    access_log /var/log/nginx/reverse-access.log;
