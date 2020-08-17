@@ -114,7 +114,7 @@ You have two options:
 ```diff
 - change "<validator address>" to the actual Validator address from 10.1
 ```
-12.1 )![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket nodes unjail <validator address> mainnet 10000
+12.1 )![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket nodes unjail < validator address > mainnet 10000
  ```diff 
 + passphrase
 ! enter passphrase
