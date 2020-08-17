@@ -133,7 +133,7 @@ comand prompt now ends with
 + NGINX IS RESTARTED! CONFIGURATION COMPLETE - PROCEED TO STEP 5
 ```
 
-## Step 5 - Create Pocket Account
+## Step 5 - Create Pocket Account and Sync the Node
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 ```diff
 + Passphrase
@@ -141,7 +141,14 @@ comand prompt now ends with
 ! emptyaddress
 + Account generated successfully:
 + Address: LongStringOfLettersAndNumbers
+
+! 5.2) Close the current terminal session
+! 5.3) Reconnect to your node
 ```
+5.4) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start
+
+## Whoot, Whoot you have a working full node!
+
 5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
 ```diff
 - insert the text below:  
