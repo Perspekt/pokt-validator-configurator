@@ -72,7 +72,8 @@ You have two options:
 1.)  copy it up using an FTP program such as filezilla.  
 2.)  Create it on the server using “vi” and copy/paste the contents from your local device. 
 ```diff
-This document will assume you are using option 2.  If you have already copied up the file using another method, skip to 9.2
+- This document will assume you are using option 2.  
+- If you have already copied up the file using another method, skip to 9.2
 ```
 9.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/keyfile.json  
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)9.1.1) Open the secure keyfile on your PC with any text editor and copy the entire contents of that file.  
