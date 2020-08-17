@@ -9,7 +9,21 @@
 ###                     PREREQUISITES AND ASSUMPTIONS:
 These instructions continue from: https://github.com/BenVanGithub/pokt-validator-configurator/blob/master/README.md   
 Please be sure you have completed those steps before continuing here. 
-5.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
+
+
+
+## Step 6 Create Validator
+6.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts list 
+```diff
+- you should see only one account, the one that you created in step 5.1
+```
+6.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts set-validator <address from 6.1 above>
+```diff
++ Passphrase
+! emptyaddress
+```
+## Step 7 Create chains.json (describes what blockchains you will serve and how)
+7.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/chains.json
 ```diff
 - insert the text below:  
 - Change xxx.xxx.xxx.xxx for the IPs of the full nodes which will provide relays 
@@ -26,28 +40,13 @@ Please be sure you have completed those steps before continuing here.
   }  
 ]  
 ```
-## Step 6 Create Validator
-6.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts list 
+## Step 8 Test your ability to send relays
 ```diff
-- you should see only one account, the one that you created in step 5.1
+- If Pocket is currently running... Stop it
 ```
-6.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts set-validator <address from 6.1 above>
-```diff
-+ Passphrase
-! emptyaddress
-```
-## Step 7 Sync the blockchain and test
-7.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start  
-```diff
-- wait for it to sync the blockchain
-- You can open another terminal window to the same server with the same account and type:
-! pocket query height
-- to see the block height progress..
-- when it has synced… stop it with <control>C and restart it with:
-```
-7.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start --simulateRelay
+8.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start --simulateRelay
 
-7.3)  Ethereum Relay Test:
+8.2)  Ethereum Relay Test:
 ```diff
 -  (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
 -  (replace "xxx.xxx.xxx.xxx" with the IP of an Ethereum Full Node that will accept RPCs)  
@@ -56,7 +55,7 @@ Please be sure you have completed those steps before continuing here.
 ``` diff
 + produces a short response (about 40 chars) if successful
 ```
-7.4) Pocket Relay Test
+8.3) Pocket Relay Test
 ```diff
 -  (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
 -  (replae "xxx.xxx.xxx.xxx" with the IP of a Pocket Full Node that will accept RPCs)  
@@ -66,9 +65,7 @@ Please be sure you have completed those steps before continuing here.
 + produces a massive wall of text if successful
 ```
 
-## Step 8 - Load Wallet
-
-
+## Step 9 - Load Wallet
 
 You have two options:  
 1.)  copy it up using an FTP program such as filezilla.  
@@ -76,14 +73,15 @@ You have two options:
 
 This document will assume you are using option 2.  If you have already copied up the file using another method, skip to the line that starts…. “pocket accounts import-armored..”
 
-vi .pocket/config/keyfile.json
+9.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) vi .pocket/config/keyfile.json
 
-1.) Open the secure keyfile on your PC with any text editor and copy the entire contents of that file.  
-2.) Paste those contents into the keyfile.json which you are currently editing on the server.
-3.) save the file.
-
-NOTE: we are using the path .pocket/config for convenience and consistency… it does not have to be in that specific directory nor have that specific name. 
-
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)1.) Open the secure keyfile on your PC with any text editor and copy the entire contents of that file.  
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)2.) Paste those contents into the keyfile.json which you are currently editing on the server.
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.) save the file.
+```diff
+@@ NOTE: we are using the path .pocket/config for convenience and consistency…  @@
+@@ it does not have to be in that specific directory nor have that specific name. @@
+```
 
 pocket accounts import-armored .pocket/config/keyfile.json
 
