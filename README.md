@@ -1,10 +1,8 @@
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)RED BOXES![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)GREEN BOXES![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)Orange BOXES![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)RED BOXES![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)       ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)GREEN BOXES![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)       ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)ORANGE BOXES![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
 ```diff
 -  RED BOX or text in red shows important errors/messages/warnings
 +  GREEN BOX  or text in green shows terminal output 
-!  ORANGE BOX or text is stuff that you will type or copy paste into the terminal 
+!  ORANGE BOX or text in orange is stuff that you will type or copy paste into the terminal 
 ```
 # pokt-validator-configurator
 Scripts to setup Pocket Network validator node updated for RC-0.5.0 
