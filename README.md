@@ -68,7 +68,7 @@ comand prompt now ends with
 ! Y
 + STARTING NEW SHELL TO LOAD G-INSTALL...
 ```
-2.4) Continue to Part 3 (you are dropped into a new shell)
+2.4) Continue to Step 3 (you are dropped into a new shell)
 
 ## Step 3 - Create SSL Cert
 
@@ -102,7 +102,7 @@ comand prompt now ends with
 - reference information for how to move name servers and checking TXT propagation
 ``` 
   https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
-  https://mxtoolbox.com/TXTLookup.aspx
+  https://mxtoolbox.com/TXTLookup.aspx  
   https://www.whatsmydns.net/
     
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
