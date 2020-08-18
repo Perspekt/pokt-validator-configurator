@@ -134,7 +134,7 @@ comand prompt now ends with
 + Address: LongStringOfLettersAndNumbers
 ```
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.2) Close the current terminal session  
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.3) Reconnect and Login using username created in step 1  
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.3) Reconnect and Login using username created in step 1.4  
 5.4) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start
 
 ## Whoot, Whoot you have a working full node!
