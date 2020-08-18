@@ -26,7 +26,7 @@ Please be sure you have completed those steps before continuing here.
 ```
 ```
 [  
-  {  pocket accounts create
+  {
     "id": "0001",  
     "url": "http://xxx.xxx.xxx.xxx:8081"  
   },  
