@@ -132,10 +132,10 @@ comand prompt now ends with
 ! emptyaddress
 + Account generated successfully:
 + Address: LongStringOfLettersAndNumbers
-
-! 5.2) Close the current terminal session
-! 5.3) Reconnect to your node
 ```
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.2) Close the current terminal session
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.3) Reconnect to your node
+
 5.4) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start
 
 ## Whoot, Whoot you have a working full node!
