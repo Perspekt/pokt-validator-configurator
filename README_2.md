@@ -111,7 +111,7 @@ You have two options:
 ! pocket nodes stake <Validator/Staking Address> 15140000000 0001,0021 http://yourDomainName:8081 mainnet 10000
 + passphrase
 !<<EnterYourPassphrase>>
-- success full output looks similar to:
+- successfull output looks similar to:
 +     "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":
 +  [{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"stake_validator\"}]}]}]", 
 +    "txhash": "C1F1283D7E9098FC4D95F2CCFAE5547789ACB87E404BB3BF0AC56E6C721E3E77"}
@@ -119,6 +119,8 @@ You have two options:
 -  wait, up to 15 minutes.
 -  confirm staking was successfull with:
 !  pocket query node < validator address >
+-  working response should include the line:
++  "jailed": false,
 @@  refer to the instructions at the official Pocket developers web-site @@
 ```
 ## Step 12 Unjail (only necessary for Genesis file funding)
