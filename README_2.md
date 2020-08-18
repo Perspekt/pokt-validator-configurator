@@ -108,7 +108,15 @@ You have two options:
 @@  Step 11 is still under construction                                  @@
 - pocket nodes stake <fromAddr> <amount in uPOKT> <chains> <serviceURI w/ rpc port> <chainID> <fees in Upokt>
 - sample:
-- pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 http://yourDomainName:8081 mainnet 10000
+! pocket nodes stake <Validator Address w/ >= 15,000 POKT> 15140000000 0001,0021 http://yourDomainName:8081 mainnet 10000
++ passphrase
+!<<EnterYourPassphrase>>
++     "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":
++  [{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"stake_validator\"}]}]}]", 
++    "txhash": "C1F1283D7E9098FC4D95F2CCFAE5547789ACB87E404BB3BF0AC56E6C721E3E77"
+}
+
+-
 @@  refer to the instructions at the official Pocket developers web-site @@
 ```
 ## Step 12 Unjail (only necessary for Genesis file funding)
