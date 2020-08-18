@@ -13,6 +13,7 @@ if [[ "$M_T_NETWORK" == "M" ]]; then
     SEEDS=$MAIN_SEEDS
 else
     echo "Testnet"
+    M_T_NETWORK="T"
     SEEDS=$TEST_SEEDS
 fi
 
@@ -43,7 +44,12 @@ PID=$(pgrep -f "pocket start")
 kill $PID
 sleep 2
 cd ~/.pocket/config/
-curl -O https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
+if [[ "$M_T_NETWORK" == "M" ]]; then
+     curl -O https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/mainnet/genesis.json
+else
+     curl -O https://raw.githubusercontent.com/pokt-network/pocket-network-genesis/master/testnet/genesis.json
+fi
+
 # Add  Create Chains
 cd ~
 
