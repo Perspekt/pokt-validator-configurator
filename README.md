@@ -93,7 +93,7 @@ comand prompt now ends with
 + (A)gree/(C)ancel: )) 
 ! A
 + (Y)es/(N)o: )) 
-!Y
+! Y
 + Are you OK with .... (Y)es/(N)o: 
 ! Y
 - STOP.. STOP.. STOP
@@ -137,7 +137,7 @@ comand prompt now ends with
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 ```diff
 + Passphrase
-- we use a simple passphrase her because this account will not have any money in it.
+- we use a simple passphrase here because this account will not have any money in it.
 ! emptyaddress
 + Account generated successfully:
 + Address: LongStringOfLettersAndNumbers
