@@ -105,9 +105,9 @@ comand prompt now ends with
   https://mxtoolbox.com/TXTLookup.aspx
   https://www.whatsmydns.net/
     
-3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
 
-3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Step 4 - Run the script to automate the Pocket-cli install and file configurations
 4.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cp ~/pokt-validator-configurator/install.sh ~
