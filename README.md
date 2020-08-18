@@ -99,15 +99,14 @@ comand prompt now ends with
 +              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 +               Press Enter to Continue  ))
 - STOP.. STOP.. STOP do not press enter until you have confirmed the deployment of the TXT record and value.
-- refrence information for how to move name servers to D.O.     
--     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
-```     
+- reference information for how to move name servers and checking TXT propagation
+``` 
+  https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
+  https://mxtoolbox.com/TXTLookup.aspx
+  https://www.whatsmydns.net/
+    
 3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
-```diff
-- here are some sample tool sites to confirm that the DNS info has been propogated  
-- https://mxtoolbox.com/TXTLookup.aspx
-- https://www.whatsmydns.net/
-```
+
 3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Step 4 - Run the script to automate the Pocket-cli install and file configurations
