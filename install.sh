@@ -1,10 +1,20 @@
 #!/bin/bash
 
 read -p 'Enter domain name for node (ex: node01.test.com: ' DOMAIN
-
 echo Configuring for domain: $DOMAIN
 
-SEEDS=03b74fa3c68356bb40d58ecc10129479b159a145@seed1.mainnet.pokt.network:20656,64c91701ea98440bc3674fdb9a99311461cdfd6f@seed2.mainnet.pokt.network:21656,18eaabef85c661344b640b74597c4973af707ccb@pocket-seed.simply-vc.com.mt:26656,8d0bbd044cff904b782e597162a4184622d3c1e6@poktseed100.chainflow.io:26656
+MAIN_SEEDS=03b74fa3c68356bb40d58ecc10129479b159a145@seed1.mainnet.pokt.network:20656,64c91701ea98440bc3674fdb9a99311461cdfd6f@seed2.mainnet.pokt.network:21656,18eaabef85c661344b640b74597c4973af707ccb@pocket-seed.simply-vc.com.mt:26656,8d0bbd044cff904b782e597162a4184622d3c1e6@poktseed100.chainflow.io:26656
+TEST_SEEDS=b3d86cd8ab4aa0cb9861cb795d8d154e685a94cf@seed1.testnet.pokt.network:20656,17ca63e4ff7535a40512c550dd0267e519cafc1a@seed2.testnet.pokt.network:21656,f99386c6d7cd42a486c63ccd80f5fbea68759cd7@seed3.testnet.pokt.network:22656
+
+read -p 'Use seeds for Mainnet or Testnet (m/T): ' M_T_NETWORK
+M_T_NETWORK=${M_T_NETWORK^^}
+if [[ "$M_T_NETWORK" == "M" ]]; then
+    echo "Mainnet"
+    SEEDS=$MAIN_SEEDS
+else
+    echo "Testnet"
+    SEEDS=$TEST_SEEDS
+fi
 
 echo Seeds to be used: $SEEDS
 
