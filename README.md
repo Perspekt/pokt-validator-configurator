@@ -1,5 +1,6 @@
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 ```diff
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+
 - red box or text in red shows important errors/messages/warnings
 ``` 
 ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
@@ -101,7 +102,7 @@ comand prompt now ends with
 - shown on your screen must be deployed and propogated across the internet
 - before continuing
 +        ((Please deploy a DNS TXT record under the name
-+              _acme-challenge.node2.2jx.com with the following value:
++              _acme-challenge.YourDomainName.com with the following value:
 +
 +               Before continuing, verify the record is deployed.
 +              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
