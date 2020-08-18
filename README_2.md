@@ -49,7 +49,7 @@ Please be sure you have completed those steps before continuing here.
 ``` 
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ```curl -X POST --data '{"chain_url":"http://xxx.xxx.xxx.xxx:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:8081/v1/client/sim ```
 ``` diff
-+ produces a short response (about 40 chars) if successful
++ produces  {"jsonrpc": "2.0", "id": 1, "result": "0x0"}   if successful
 ```
 8.3) Pocket Relay Test
 ```diff
