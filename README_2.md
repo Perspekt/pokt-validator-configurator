@@ -106,6 +106,9 @@ You have two options:
 11.1) ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Building the stake commad.. ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+).
 ```diff
 @@  Step 11 is still under construction                                  @@
+- pocket nodes stake <fromAddr> <amount in uPOKT> <chains> <serviceURI w/ rpc port> <chainID> <fees in Upokt>
+- sample:
+- pocket nodes stake 56870CF8331229C762A9E9C40FE7E22C34574D71 15140000000 0001,0021 http://yourDomainName:8081 mainnet 10000
 @@  refer to the instructions at the official Pocket developers web-site @@
 ```
 ## Step 12 Unjail (only necessary for Genesis file funding)
