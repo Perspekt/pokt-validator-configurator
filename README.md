@@ -1,16 +1,9 @@
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)RED BOXES![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) . . . ![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)GREEN BOXES![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+) . . .  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)ORANGE BOXES![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
 ```diff
-- red box or text in red shows important errors/messages/warnings
-``` 
-![#1589F0](https://via.placeholder.com/15/32CD32/000000?text=+)
-```diff
-+  green box or text in green shows terminal output 
+-  RED BOX or text in red shows important errors/messages/warnings
++  GREEN BOX  or text in green shows terminal output 
+!  ORANGE BOX or text in orange is stuff that you will type or copy paste into the terminal 
 ```
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)
-```diff 
-!  Orange box or text is stuff that you will type or copy paste into the terminal 
-```
-
 # pokt-validator-configurator
 Scripts to setup Pocket Network validator node updated for RC-0.5.0 
 ```diff
@@ -25,7 +18,6 @@ git clone https://github.com/BenVanGithub/pokt-validator-configurator.git
 ```diff
 +  Unpacking objects: 100% (38/38), 8.96 KiB | 705.00 KiB/s, done.
 ```
-
 1.2) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cd pokt-validator-configurator  
 comand prompt now ends with
 ```diff
@@ -76,7 +68,7 @@ comand prompt now ends with
 ! Y
 + STARTING NEW SHELL TO LOAD G-INSTALL...
 ```
-2.4) Continue to Part 3 (you are dropped into a new shell)
+2.4) Continue to Step 3 (you are dropped into a new shell)
 
 ## Step 3 - Create SSL Cert
 
@@ -93,7 +85,7 @@ comand prompt now ends with
 + (A)gree/(C)ancel: )) 
 ! A
 + (Y)es/(N)o: )) 
-!Y
+! Y
 + Are you OK with .... (Y)es/(N)o: 
 ! Y
 - STOP.. STOP.. STOP
@@ -101,22 +93,21 @@ comand prompt now ends with
 - shown on your screen must be deployed and propogated across the internet
 - before continuing
 +        ((Please deploy a DNS TXT record under the name
-+              _acme-challenge.node2.2jx.com with the following value:
++              _acme-challenge.YourDomainName.com with the following value:
 +
 +               Before continuing, verify the record is deployed.
 +              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 +               Press Enter to Continue  ))
 - STOP.. STOP.. STOP do not press enter until you have confirmed the deployment of the TXT record and value.
-- refrence information for how to move name servers to D.O.     
--     https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
-```     
-3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
-```diff
-- here are some sample tool sites to confirm that the DNS info has been propogated  
-- https://mxtoolbox.com/TXTLookup.aspx
-- https://www.whatsmydns.net/
-```
-3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
+- reference information for how to move name servers and checking TXT propagation
+``` 
+  https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
+  https://mxtoolbox.com/TXTLookup.aspx  
+  https://www.whatsmydns.net/
+    
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.2) Create the TXT record where your domain's nameservers are hosted (wait and confirm propagation)
+
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+)3.4) Go back to your terminal and "Press Enter to Continue" (You should see "Congratulations!")
 
 ## Step 4 - Run the script to automate the Pocket-cli install and file configurations
 4.1)  ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) cp ~/pokt-validator-configurator/install.sh ~
@@ -137,14 +128,13 @@ comand prompt now ends with
 5.1) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket accounts create
 ```diff
 + Passphrase
-- we use a simple passphrase her because this account will not have any money in it.
+- we use a simple passphrase here because this account will not have any money in it.
 ! emptyaddress
 + Account generated successfully:
 + Address: LongStringOfLettersAndNumbers
-
-! 5.2) Close the current terminal session
-! 5.3) Reconnect to your node
 ```
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.2) Close the current terminal session  
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) 5.3) Reconnect and Login using username created in step 1.4  
 5.4) ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) pocket start
 
 ## Whoot, Whoot you have a working full node!

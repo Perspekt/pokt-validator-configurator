@@ -49,7 +49,7 @@ Please be sure you have completed those steps before continuing here.
 ``` 
 ![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ```curl -X POST --data '{"chain_url":"http://xxx.xxx.xxx.xxx:8545","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:8081/v1/client/sim ```
 ``` diff
-+ produces a short response (about 40 chars) if successful
++ produces  {"jsonrpc": "2.0", "id": 1, "result": "0x0"}   if successful
 ```
 8.3) Pocket Relay Test
 ```diff
@@ -106,6 +106,21 @@ You have two options:
 11.1) ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Building the stake commad.. ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+).
 ```diff
 @@  Step 11 is still under construction                                  @@
+- pocket nodes stake <fromAddr> <amount in uPOKT> <chains> <serviceURI w/ rpc port> <chainID> <fees in Upokt>
+- sample:
+! pocket nodes stake <Validator/Staking Address> 15140000000 0001,0021 http://yourDomainName:8081 mainnet 10000
++ passphrase
+!<<EnterYourPassphrase>>
+- successfull output looks similar to:
++     "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":
++  [{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"stake_validator\"}]}]}]", 
++    "txhash": "C1F1283D7E9098FC4D95F2CCFAE5547789ACB87E404BB3BF0AC56E6C721E3E77"}
+-  The staking transaction will not take effect until a block has been added... 
+-  wait, up to 15 minutes.
+-  confirm staking was successfull with:
+!  pocket query node < validator address >
+-  working response should include the line:
++  "jailed": false,
 @@  refer to the instructions at the official Pocket developers web-site @@
 ```
 ## Step 12 Unjail (only necessary for Genesis file funding)
