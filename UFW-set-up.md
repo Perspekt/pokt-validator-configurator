@@ -8,5 +8,5 @@ sudo ufw allow ssh
 sudo ufw allow 8081
 sudo ufw allow 8082
 sudo ufw allow 26657
-sudo ufw allow 26656
+sudo ufw allow 26658
 ```
