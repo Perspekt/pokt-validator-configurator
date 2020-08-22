@@ -1,4 +1,3 @@
-```
 sudo apt-get install ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -9,4 +8,6 @@ sudo ufw allow 8081
 sudo ufw allow 8082
 sudo ufw allow 26657
 sudo ufw allow 26658
+sudo ufw enable
+sudo ufw status verbose
 ```
