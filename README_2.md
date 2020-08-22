@@ -108,7 +108,7 @@ You have two options:
 @@  Step 11 is still under construction                                  @@
 - pocket nodes stake <fromAddr> <amount in uPOKT> <chains> <serviceURI w/ rpc port> <chainID> <fees in Upokt>
 - sample:
-! pocket nodes stake <Validator/Staking Address> 15140000000 0001,0021 https://yourDomainName:443 mainnet 10000
+! pocket nodes stake <Validator/Staking Address> 15140000000 0001,0021 https://yourDomainName:443 testnet 10000
 + passphrase
 !<<EnterYourPassphrase>>
 - successfull output looks similar to:
