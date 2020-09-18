@@ -21,7 +21,7 @@ fi
 echo Seeds to be used: $SEEDS
 
 read -p 'Use RC-0.5.0? n=use 0.5.1 (Y/n): ' RC50_YN
-RC50_YN = $(RC50_YN^^)
+RC50_YN = ${RC50_YN^^}
 if [[ "$RC50_YN" == "N" ]]; then
     echo "Using RC-0.5.1"
 else
