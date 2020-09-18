@@ -60,6 +60,13 @@ comand prompt now ends with
 ```diff
 +[sudo] password for nodeuser:
 ! enter password
++ Use seeds for Mainnet or Testnet (m/T): 
+! M
++ Mainnet
++ a long list of seed node info
++ Use RC-0.5.0? n=use 0.5.1 (Y/n):
+! Y
++ Using RC-0.5.0
 - takes aproximately 3 minutes to complete,  pauses several times durring process
 - several "error" and warning lines but it's OK
 + Do you want to continue? [y/N] 
