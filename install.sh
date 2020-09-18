@@ -7,6 +7,7 @@ MAIN_SEEDS=03b74fa3c68356bb40d58ecc10129479b159a145@seed1.mainnet.pokt.network:2
 TEST_SEEDS=b3d86cd8ab4aa0cb9861cb795d8d154e685a94cf@seed1.testnet.pokt.network:20656,17ca63e4ff7535a40512c550dd0267e519cafc1a@seed2.testnet.pokt.network:21656,f99386c6d7cd42a486c63ccd80f5fbea68759cd7@seed3.testnet.pokt.network:22656
 
 read -p 'Use seeds for Mainnet or Testnet (m/T): ' M_T_NETWORK
+
 M_T_NETWORK=${M_T_NETWORK^^}
 if [[ "$M_T_NETWORK" == "M" ]]; then
     echo "Mainnet"
@@ -19,12 +20,28 @@ fi
 
 echo Seeds to be used: $SEEDS
 
+read -p 'Use RC-0.5.0? n=use 0.5.1 (Y/n): ' RC50_YN
+RC50_YN = $(RC50_YN^^)
+if [[ "$RC50_YN" == "N" ]]; then
+    echo "Using RC-0.5.1"
+else
+    echo "Using RC-0.5.0"
+    RC50_YN="Y"
+fi
+
+
+
 g install 1.13
 go get github.com/pokt-network/pocket-core
 sudo apt-get update -y 
 sudo apt-get install libleveldb-dev build-essential -y
 cd go/src/github.com/pokt-network/pocket-core
-git checkout tags/RC-0.5.0
+if [[ "$RC50_YN" == "N" ]]; then
+   git checkout tags/RC-0.5.1
+else
+   git checkout tags/RC-0.5.0
+fi
+
 echo $GOPATH
 
 if [ -z "$GOPATH" ]
@@ -39,7 +56,11 @@ fi
 
 sudo go build -tags cleveldb -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 sleep 2
-pocket start --mainnet #creates config.json
+if [[ "$M_T_NETWORK" == "M" ]]; then
+   pocket start --mainnet #creates config.json
+else 
+   pocket start --testnet #creates config.json
+fi
 PID=$(pgrep -f "pocket start")
 kill $PID
 sleep 2
