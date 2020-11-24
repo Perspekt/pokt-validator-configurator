@@ -20,10 +20,10 @@ fi
 
 echo Seeds to be used: $SEEDS
 
-read -p 'Use RC-0.5.1? n=use Beta-0.5.2.3 (Y/n): ' RC51_YN
+read -p 'Use RC-0.5.1? n=use Beta-0.5.2.4 (Y/n): ' RC51_YN
 RC51_YN=${RC51_YN^^}
 if [[ "$RC51_YN" == "N" ]]; then
-    echo "Using BETA-0.5.2.3"
+    echo "Using BETA-0.5.2.4"
     RC51_YN="N"
 else
     echo "Using RC-0.5.1"
