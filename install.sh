@@ -20,14 +20,14 @@ fi
 
 echo Seeds to be used: $SEEDS
 
-read -p 'Use RC-0.5.1? n=use Beta-0.5.2.4 (Y/n): ' RC51_YN
-RC51_YN=${RC51_YN^^}
-if [[ "$RC51_YN" == "N" ]]; then
+read -p 'Use RC-0.5.2.9? n=use Beta-0.5.2.4 (Y/n): ' RC52_YN
+RC52_YN=${RC52_YN^^}
+if [[ "$RC52_YN" == "N" ]]; then
     echo "Using BETA-0.5.2.4"
-    RC51_YN="N"
+    RC52_YN="N"
 else
-    echo "Using RC-0.5.1"
-    RC51_YN="Y"
+    echo "Using RC-0.5.2.9"
+    RC52_YN="Y"
 fi
 
 
@@ -37,10 +37,10 @@ go get github.com/pokt-network/pocket-core
 sudo apt-get update -y 
 sudo apt-get install libleveldb-dev build-essential -y
 cd go/src/github.com/pokt-network/pocket-core
-if [[ "$RC51_YN" == "N" ]]; then
-   git checkout tags/Beta-0.5.2.3
+if [[ "$RC52_YN" == "N" ]]; then
+   git checkout tags/Beta-0.5.2.4
 else
-   git checkout tags/RC-0.5.1
+   git checkout tags/RC-0.5.2.9
 fi
 
 echo $GOPATH
@@ -54,8 +54,8 @@ else
       echo PROCEEDING...
 fi
 
+sudo go build -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 
-sudo go build -tags cleveldb -o $GOPATH/bin/pocket ./app/cmd/pocket_core/main.go
 sleep 2
 if [[ "$M_T_NETWORK" == "M" ]]; then
    pocket start --mainnet #creates config.json
@@ -96,6 +96,14 @@ if cat $BASHRC | grep "ulimit -Sn 16384"; then
 else
 	echo Adding ulimit setting to $BASHRC...
 	echo ulimit -Sn 16384 >> $BASHRC
+fi
+
+BASHRC=~/.bashrc
+if cat $BASHRC | grep "export GODEBUG"; then
+	echo GODEBUG setting already in $BASHRC
+else
+	echo Adding GODEBUG setting to $BASHRC...
+	echo 'export GODEBUG="madvdontneed=1"' >> $BASHRC
 fi
 
 source ~/.bashrc
