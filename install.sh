@@ -20,25 +20,25 @@ fi
 
 echo Seeds to be used: $SEEDS
 
-read -p 'Use RC-0.5.2.9? n=use Beta-0.5.2.4 (Y/n): ' RC52_YN
-RC52_YN=${RC52_YN^^}
-if [[ "$RC52_YN" == "N" ]]; then
-    echo "Using BETA-0.5.2.4"
-    RC52_YN="N"
+read -p 'Use RC-0.6.0? n=use Beta-0.5.2.9 (Y/n): ' RC6_YN
+RC6_YN=${RC6_YN^^}
+if [[ "$RC6_YN" == "N" ]]; then
+    echo "Using BETA-0.5.2.9"
+    RC6_YN="N"
 else
-    echo "Using RC-0.5.2.9"
-    RC52_YN="Y"
+    echo "Using RC-0.6.0"
+    RC6_YN="Y"
 fi
 
 
 
-g install 1.13
+g install 1.16
 go get github.com/pokt-network/pocket-core
 sudo apt-get update -y 
 sudo apt-get install libleveldb-dev build-essential -y
 cd go/src/github.com/pokt-network/pocket-core
-if [[ "$RC52_YN" == "N" ]]; then
-   git checkout tags/Beta-0.5.2.4
+if [[ "$RC6_YN" == "N" ]]; then
+   git checkout tags/Beta-0.5.2.9
 else
    git checkout tags/RC-0.5.2.9
 fi
