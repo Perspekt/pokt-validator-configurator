@@ -33,14 +33,15 @@ fi
 
 
 g install 1.16
-go get github.com/pokt-network/pocket-core
+go get -u github.com/pokt-network/pocket-core
 sudo apt-get update -y 
 sudo apt-get install libleveldb-dev build-essential -y
 cd go/src/github.com/pokt-network/pocket-core
+git pull
 if [[ "$RC6_YN" == "N" ]]; then
    git checkout tags/Beta-0.5.2.9
 else
-   git checkout tags/RC-0.5.2.9
+   git checkout tags/RC-0.6.0
 fi
 
 echo $GOPATH
