@@ -108,6 +108,9 @@ fi
 
 source ~/.bashrc
 
+echo "Updating Go to V 1.16"
+g install 1.16
+
 echo NGINX CONFIGURATION
 sudo service nginx start
 
