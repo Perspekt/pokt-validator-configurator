@@ -20,13 +20,13 @@ fi
 
 echo Seeds to be used: $SEEDS
 
-read -p 'Use RC-0.6.0? n=use Beta-0.5.2.9 (Y/n): ' RC6_YN
+read -p 'Use RC-0.6.1? n=use Beta-0.5.2.9 (Y/n): ' RC6_YN
 RC6_YN=${RC6_YN^^}
 if [[ "$RC6_YN" == "N" ]]; then
     echo "Using BETA-0.5.2.9"
     RC6_YN="N"
 else
-    echo "Using RC-0.6.0"
+    echo "Using RC-0.6.1"
     RC6_YN="Y"
 fi
 
@@ -40,7 +40,7 @@ cd ~/go/src/github.com/pokt-network/pocket-core
 if [[ "$RC6_YN" == "N" ]]; then
    git checkout tags/Beta-0.5.2.9
 else
-   git checkout tags/RC-0.6.0
+   git checkout tags/RC-0.6.1
 fi
 
 echo $GOPATH
