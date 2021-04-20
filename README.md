@@ -122,9 +122,9 @@ comand prompt now ends with
 ! M
 + Mainnet
 + a long list of seed node info
-+ Use RC-0.5.0? n=use 0.5.1 (Y/n):
++ Use RC-0.6.1? n=use 0.5.2.9 (Y/n):
 ! Y
-+ Using RC-0.5.0
++ Using RC-0.6.1
 + [sudo] password for nodeuser: 
 ! enter password
 - takes about 3 minutes, pauses several times
