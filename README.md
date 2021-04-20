@@ -66,7 +66,7 @@ comand prompt now ends with
 + Do you want to continue? [y/N] 
 ! Y
 + Do you want to install the latest go version? [y/N] 
-! Y
+! N
 + STARTING NEW SHELL TO LOAD G-INSTALL...
 ```
 2.4) Continue to Step 3 (you are dropped into a new shell)
