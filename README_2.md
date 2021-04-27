@@ -47,7 +47,7 @@ Please be sure you have completed those steps before continuing here.
 -  (replace "yourDomain.com" with the URL of your Pocket Validator Node)  
 -  (replace "xxx.xxx.xxx.xxx:port" with the IP of an Ethereum Full Node that will accept RPCs)  [[8545 = geth default port]]
 ``` 
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ```curl -X POST --data '{"chain_url":"http://xxx.xxx.xxx.xxx:port","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:port/v1/client/sim ```
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ```curl -X POST --data '{"relay_network_id":"0001","payload":{"data":"{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xe7a24E61b2ec77d3663ec785d1110688d2A32ecc\", \"latest\"],\"id\":1}","method":"POST","path":"","headers":{}}}' https://yourDomain.com:port/v1/client/sim ```
 ``` diff
 + produces  {"jsonrpc": "2.0", "id": 1, "result": "0x0"}   if successful
 ```
@@ -56,7 +56,7 @@ Please be sure you have completed those steps before continuing here.
 -  (replace "yourDomain.com:port" with the URL of your Pocket Validator Node [[port 8081 or 443]])  
 -  (replae "xxx.xxx.xxx.xxx:port" with the IP of a Pocket Full Node that will accept RPCs) [[ 8081=self? 8082 other? ]]
 ``` 
-![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ```curl --insecure -X POST --data '{"chain_url":"http://xxx.xxx.xxx.xxx:port","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://yourDomain.com:port/v1/client/sim ```
+![#1589F0](https://via.placeholder.com/15/FFC000/000000?text=+) ```curl --insecure -X POST --data '{"relay_network_id":"0021","payload":{"data":"{}","method":"POST","path":"v1/query/nodes","headers":{}}}' https://yourDomain.com:port/v1/client/sim ```
 ``` diff
 + produces a massive wall of text if successful
 ```
