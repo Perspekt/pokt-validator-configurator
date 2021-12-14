@@ -13,7 +13,7 @@ go get github.com/pokt-network/pocket-core
 sudo apt-get update -y 
 sudo apt-get install libleveldb-dev build-essential -y
 cd go/src/github.com/pokt-network/pocket-core
-git checkout tags/RC-0.5.0
+git checkout tags/RC-0.7.0.1
 echo $GOPATH
 
 if [ -z "$GOPATH" ]
